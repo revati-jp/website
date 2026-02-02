@@ -267,6 +267,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Mattu',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: { year: null, month: 4, day: 26 },
+				age: null,
+				twitter: 'Mattu_OW',
+				youtube: null,
+				twitch: 'mattsu_ow',
+				homepage: null
+			},
+			{
 				memberName: 'Ril',
 				icon: null,
 				role: 'Player',
@@ -274,6 +286,18 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Ril7_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'sans',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '_sans_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
