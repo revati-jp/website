@@ -359,6 +359,100 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		divisionName: 'Overwatch Academy 2nd',
+		divisionSubName: 'REVATI Chilling Chicken',
+		members: [
+			{
+				memberName: 'Orange',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'orange_ow08',
+				youtube: null,
+				twitch: 'v_orange_08',
+				homepage: null
+			},
+			{
+				memberName: 'RIMK',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2010, month: 12, day: 21 },
+				age: null,
+				twitter: 'RIMK_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'はとぽ',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2009, month: 5, day: 26 },
+				age: null,
+				twitter: 'LALA_BLOOMING',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'はる',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2009, month: 7, day: 29 },
+				age: null,
+				twitter: 'HALU_ovv',
+				youtube: '@HALU-ow',
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: '美味しいチキン',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2009, month: 7, day: 30 },
+				age: null,
+				twitter: 'fJQU4hgzNhcGscC',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'Forte',
+				icon: null,
+				role: 'Coach',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'OW_Forte',
+				youtube: '@OW_Forte',
+				twitch: null,
+				homepage: null
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				memberName: 'yon',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'nqxiv4',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			}
+		]
+	},
+	{
 		divisionName: 'Apex',
 		members: [
 			{
