@@ -379,7 +379,7 @@ export const MEMBER_LISTS: {
 				icon: null,
 				role: 'Player',
 				country: 'jp',
-				birthday: { year: 2010, month: 12, day: 21 },
+				birthday: { year: 2010, month: 11, day: 21 },
 				age: null,
 				twitter: 'RIMK_ow',
 				youtube: null,
