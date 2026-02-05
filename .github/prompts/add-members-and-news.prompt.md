@@ -88,7 +88,8 @@ title: ここにタイトル
 		},
 		{
 			name: 'Player3',
-			socials: { twitter: 'player3', youtube: '@player3' }
+			socials: { twitter: 'player3', youtube: '@player3' },
+			additional: '(TANK) 🇯🇵'
 		}
 	];
 
@@ -122,6 +123,9 @@ Player3「任意のコメント」
 Coach1「任意のコメント」
 
 ```
+
+`additional` プロパティでは、太字のメンバー名とは別に追加情報を含めることができます。（例: `**Player3** (TANK) 🇯🇵`）
+必要があれば利用してください。
 
 コメントは無い場合があります。
 
@@ -163,7 +167,7 @@ npm run check && npm run fmt && npm run lnt
 		- Player A joins
 		- Foo, Bar, Boo join
 		- 6 members join
-			- 人数が多い場合はコミットメッセージ本文で箇条書き
+			- 人数が多い場合は件名ではこのように省略して、コミットメッセージ本文で箇条書きすること
 - `✨ Feat: add article <ID>`
 
 以上の手順に従って、REVATI のメンバー追加とニュース記事作成を行ってください。
