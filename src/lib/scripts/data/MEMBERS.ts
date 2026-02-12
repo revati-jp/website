@@ -363,18 +363,6 @@ export const MEMBER_LISTS: {
 		divisionSubName: 'REVATI Chilling Chicken',
 		members: [
 			{
-				memberName: 'Orange',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'orange_ow08',
-				youtube: null,
-				twitch: 'v_orange_08',
-				homepage: null
-			},
-			{
 				memberName: 'RIMK',
 				icon: null,
 				role: 'Player',
