@@ -303,18 +303,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Seungyeon',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Seungyeon_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'しのたん',
 				icon: null,
 				role: 'Player',
@@ -434,6 +422,100 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'nqxiv4',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			}
+		]
+	},
+	{
+		divisionName: 'Overwatch Academy 3rd',
+		divisionSubName: 'Frozen Star',
+		members: [
+			{
+				memberName: '5Moon',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'SUPerMoon108_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'kou',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'ow_kou1',
+				youtube: null,
+				twitch: 'ow_kou',
+				homepage: null
+			},
+			{
+				memberName: 'Seungyeon',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'Seungyeon_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'zircon',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Zrk0n',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'ろぶ',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'rob_ow2',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'めいざーらもん',
+				icon: null,
+				role: 'Coach',
+				country: 'jp',
+				birthday: { year: null, month: 3, day: 13 },
+				age: null,
+				twitter: 'meizorramon_ttv',
+				youtube: '@めいざーらもん',
+				twitch: 'meizorramon',
+				homepage: null
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				memberName: 'KISHI',
+				icon: 'kishi.webp',
+				role: 'Manager',
+				country: 'jp',
+				birthday: { year: 2005, month: 9, day: 2 },
+				age: null,
+				twitter: 'kishi_krunk',
 				youtube: null,
 				twitch: null,
 				homepage: null
