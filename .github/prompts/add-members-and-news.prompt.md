@@ -158,16 +158,42 @@ npm run check && npm run fmt && npm run lnt
 
 ### 5. ユーザーへのフォローアップ
 
-ユーザーに「この日付で正しいか」と「サムネイル画像が提供されている場合は `static/images/news/thumbnails/` に手動で配置するように」という旨を伝えて、
-最後に以下のような2つのコミットメッセージもユーザーに提供してください
+ユーザーに対して、
+
+- 「この日付で正しいかを確認するように」
+- メンバーのアイコン画像が指定されていた場合は、「アイコン画像のファイルを 256 × 256 ピクセルの WebP 又は JPEG 形式で `static/images/members/` に手動で配置するように」
+- 「サムネイル画像が提供されている場合は `static/images/news/thumbnails/` に手動で配置するように」
+
+という旨を伝えて、最後に以下のような2つのコミットメッセージもユーザーに提供してください
 （あなたではなくユーザーがコミットを実行する）:
 
 - `🛠️ Update: *`
 	- `*` の部分例:
-		- Player A joins
-		- Foo, Bar, Boo join
-		- 6 members join
-			- 人数が多い場合は件名ではこのように省略して、コミットメッセージ本文で箇条書きすること
+		- 1人の場合: `Player A joins`
+		- 数人の場合: `Foo, Bar, Boo join`
+	- 大人数の場合:
+		- 件名ではメンバー名を省略して、コミットメッセージ本文で箇条書きにする:
+			```
+			🛠️ Update: 6 members join
+
+			- Player A
+			- Player B
+			- Player C
+			- Player D
+			- Player E
+			- Player F
+			```
+		- 部門追加の場合は件名で部門名を入れても良い:
+			```
+			🛠️ Update: add Apex div.
+
+			- Player A
+			- Player B
+			- Player C
+			- Player D
+			- Player E
+			- Player F
+			```
 - `✨ Feat: add article <ID>`
 
 以上の手順に従って、REVATI のメンバー追加とニュース記事作成を行ってください。
