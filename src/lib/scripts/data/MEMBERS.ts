@@ -123,7 +123,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'minseo',
+				memberName: 'kirito',
 				icon: null,
 				role: 'Player',
 				country: 'kr',
@@ -199,7 +199,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Troyda',
+				memberName: 'Troy',
 				icon: null,
 				role: 'Coach',
 				country: 'kr',
