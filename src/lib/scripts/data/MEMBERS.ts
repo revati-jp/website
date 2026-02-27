@@ -223,18 +223,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null
-			},
-			{
-				memberName: 'N4rAKq',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'N4rAKq_ow',
-				youtube: null,
-				twitch: 'n4rakq_ow',
-				homepage: null
 			}
 		]
 	},
