@@ -1,6 +1,6 @@
 ---
 description: '与えられたコンテキストに基づいて、REVATI のメンバー及びニュース記事追加を行う。'
-tools: ['execute/getTerminalOutput', 'execute/runInTerminal', 'read/readFile', 'edit/editFiles', 'search/listDirectory', 'search/searchResults', 'search/textSearch', 'todo']
+tools: [execute/getTerminalOutput, execute/runInTerminal, read/problems, read/readFile, edit/createDirectory, edit/createFile, edit/editFiles, search/codebase, search/fileSearch, search/listDirectory, search/searchResults, search/textSearch, search/usages, web/fetch, todo]
 agent: 'agent'
 ---
 
