@@ -549,6 +549,18 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
+			{
+				memberName: 'シン',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'kVCOefpphbQQnHI',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
