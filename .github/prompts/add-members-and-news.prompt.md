@@ -1,6 +1,6 @@
 ---
 description: '与えられたコンテキストに基づいて、REVATI のメンバー及びニュース記事追加を行う。'
-tools: ['execute/getTerminalOutput', 'execute/runInTerminal', 'read/readFile', 'edit/editFiles', 'search/listDirectory', 'search/searchResults', 'search/textSearch', 'todo']
+tools: [execute/getTerminalOutput, execute/runInTerminal, read/problems, read/readFile, edit/createDirectory, edit/createFile, edit/editFiles, search/codebase, search/fileSearch, search/listDirectory, search/searchResults, search/textSearch, search/usages, web/fetch, todo]
 agent: 'agent'
 ---
 
@@ -63,6 +63,9 @@ ID の形式は次のルールに従います:
 ### 3. ニュース記事を書く
 
 新しいニュース記事ファイルに、ユーザーが提供した内容を書き込んでください。
+
+※ `npm run article` で生成された記事ファイルには、テンプレートが含まれています。テンプレートを残したままにはしないでください。
+
 基本的には次のような形式で書いてください:
 
 ```md

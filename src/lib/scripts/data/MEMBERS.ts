@@ -147,7 +147,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'seunghyeon',
+				memberName: 'SeungHyeon',
 				icon: null,
 				role: 'Player',
 				country: 'kr',
