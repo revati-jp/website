@@ -150,7 +150,7 @@ export const MEMBER_LISTS: {
 				memberName: 'SeungHyeon',
 				icon: null,
 				role: 'Player',
-				country: 'kr',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: 'Hyeon_Seung2',
