@@ -1,6 +1,6 @@
 {
 	"name": "revati_website",
-	"version": "3.0.19",
+	"version": "3.0.20",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -14,8 +14,8 @@
 		"article": "tsx assets/scripts/create-article.ts"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^6.0.0",
-		"@typescript-eslint/parser": "^6.0.0",
+		"@typescript-eslint/eslint-plugin": "^7.6.0",
+		"@typescript-eslint/parser": "^7.6.0",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
@@ -27,7 +27,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-cloudflare": "^3.0.0",
-		"@sveltejs/kit": "^2.49.5",
+		"@sveltejs/kit": "^2.53.3",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/node": "^22.7.4",
 		"@types/nprogress": "^0.2.3",

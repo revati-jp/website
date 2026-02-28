@@ -150,7 +150,7 @@ export const MEMBER_LISTS: {
 				memberName: 'SeungHyeon',
 				icon: null,
 				role: 'Player',
-				country: 'kr',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: 'Hyeon_Seung2',
@@ -222,18 +222,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Luvica_Lore',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'N4rAKq',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'N4rAKq_ow',
-				youtube: null,
-				twitch: 'n4rakq_ow',
 				homepage: null
 			}
 		]
@@ -558,6 +546,18 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'Suy_On_Fire',
 				youtube: '@Suy_1203',
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'シン',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'kVCOefpphbQQnHI',
+				youtube: null,
 				twitch: null,
 				homepage: null
 			},
