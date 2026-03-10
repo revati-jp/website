@@ -24,3 +24,16 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 
 - Use TypeScript strict mode.
 - Use SCSS instead of Vanilla CSS.
+
+## Other Instructions
+
+- When using the `z-index` property, ensure you update the Z-Index list in `docs/SPECIFICATION.md`.
+- When adding new CSS variables (not Sass variables), ensure you update the CSS Variable list in `docs/SPECIFICATION.md`. 
+
+## Other Docs
+
+- `docs/SPECIFICATION.md`:
+	- Z-Index list
+	- CSS Variable list (not Sass variables)
+	- Font list
+	- API Endpoint list
