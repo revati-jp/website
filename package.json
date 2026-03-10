@@ -14,6 +14,13 @@
 		"article": "tsx assets/scripts/create-article.ts"
 	},
 	"packageManager": "pnpm@10.25.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "10.25.0",
+			"onFail": "error"
+		}
+	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^7.6.0",
 		"@typescript-eslint/parser": "^7.6.0",
