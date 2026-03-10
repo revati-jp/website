@@ -32,14 +32,17 @@
 			<ul>
 				{#each softwares as software}
 					{@const licenseInfo = software.license}
-					{@const licenseNames = licenseInfo.licenses}
+					{@const normalizedLicenseNames = licenseInfo.licenses?.trim() ?? ''}
+					{@const licenseNames =
+						normalizedLicenseNames.length > 0 ? normalizedLicenseNames : 'Unknown'}
 					{@const copyright = licenseInfo.copyright}
 					{@const licenseText = licenseInfo.licenseText}
+					{@const hasLicenseText = (licenseText?.trim().length ?? 0) > 0}
 					<li>
 						<details>
 							<summary>{software.id}<span>&nbsp;- {licenseNames}</span></summary>
-							<pre>{#if copyright !== ''}<div
-										class="copyright">{copyright}</div>{/if}{licenseText !== ''
+							<pre>{#if copyright?.trim()}<div
+										class="copyright">{copyright}</div>{/if}{hasLicenseText
 									? licenseText
 									: licenseNames}
 							</pre>

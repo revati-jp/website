@@ -6,10 +6,10 @@
 	"publisher": false,
 	"email": false,
 	"url": false,
-	"licenses": "",
+	"licenses": null,
 	"licenseFile": false,
-	"licenseText": "",
+	"licenseText": null,
 	"licenseModified": false,
 	"path": false,
-	"copyright": ""
+	"copyright": null
 }
