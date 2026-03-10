@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm run licenses && vite build",
+		"build": "pnpm run licenses && vite build",
 		"preview": "vite preview",
 		"licenses": "license-checker --production --excludePrivatePackages --onlyAllow \"MIT;ISC;Apache-2.0;BSD-3-Clause;(MIT OR Apache-2.0);CC0-1.0;0BSD\" --customPath assets/license-checker-custom-format.json --json --out src/lib/licenses.json",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -13,6 +13,7 @@
 		"format": "prettier --write .",
 		"article": "tsx assets/scripts/create-article.ts"
 	},
+	"packageManager": "pnpm@10.25.0",
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^7.6.0",
 		"@typescript-eslint/parser": "^7.6.0",
