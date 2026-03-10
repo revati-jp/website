@@ -23,8 +23,8 @@
 1. 作業が完了したら次のコマンドが通るかを確認:
     - `npm run check`
     - `npm run build`
-    - `npm run fmt`
-    - `npm run lnt`
+    - `npm run format`
+    - `npm run lint`
 1. リモートにプッシュしたうえでプルリクエストを出す。
 1. マージされるのを待つ。
 

@@ -159,7 +159,7 @@ Coach1「任意のコメント」
 次のワンライナーで、コードの整形やリンティングを行ってください:
 
 ```bash
-npm run check && npm run fmt && npm run lnt
+npm run check && npm run format && npm run lint
 ```
 
 問題があれば修正してください。

@@ -18,7 +18,7 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 - Start dev server: `npm run dev`
 	- `npm run licenses` to update licenses data
 - Build: `npm run build`
-- Check & format & lint: `npm run check && npm run fmt && npm run lnt`
+- Check & format & lint: `npm run check && npm run format && npm run lint`
 
 ## Code Style
 
