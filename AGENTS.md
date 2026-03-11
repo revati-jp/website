@@ -10,6 +10,8 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 
 - Frontend: Svelte 4, SvelteKit 2, SCSS
 - Language: TypeScript 5 (strict mode)
+- Hosting: Cloudflare Pages
+- Repository: https://github.com/revati-jp/website
 
 ## Commands
 
@@ -23,7 +25,11 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 ## Code Style
 
 - Use TypeScript strict mode.
+  - Use `===` and `!==` (Strict Equality).
+  - No implicit booleans in conditionals (e.g., `if (0 < count)` or `if (user !== null)`).
 - Use SCSS instead of Vanilla CSS.
+  - `src/lib/stylesheets/variables/` directory contains utility SCSS files `_color.scss`, `_mixin.scss`, and `_dimension.scss`.
+    To use them in SCSS files or `<style lang="scss">` blocks, import as `@use '$lib/stylesheets/variables/color' as *;`.
 
 ## Other Instructions
 
