@@ -1,28 +1,37 @@
 {
 	"name": "revati_website",
-	"version": "3.0.21",
+	"version": "4.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "npm run licenses && vite build",
+		"build": "pnpm run licenses && vite build",
 		"preview": "vite preview",
-		"licenses": "license-checker --production --excludePrivatePackages --onlyAllow \"MIT;ISC;Apache-2.0;BSD-3-Clause;(MIT OR Apache-2.0);CC0-1.0;0BSD\" --customPath assets/license-checker-custom-format.json --json --out src/lib/licenses.json",
+		"licenses": "tsx assets/scripts/collect-licenses.ts",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lnt": "prettier --check . && eslint .",
-		"fmt": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
 		"article": "tsx assets/scripts/create-article.ts"
 	},
+	"packageManager": "pnpm@10.25.0",
+	"devEngines": {
+		"packageManager": {
+			"name": "pnpm",
+			"version": "10.25.0",
+			"onFail": "error"
+		}
+	},
 	"devDependencies": {
+		"@quantco/pnpm-licenses": "2.2.4-0",
 		"@typescript-eslint/eslint-plugin": "^7.6.0",
 		"@typescript-eslint/parser": "^7.6.0",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.35.1",
-		"license-checker": "^25.0.1",
 		"prettier": "^3.1.1",
 		"prettier-plugin-svelte": "^3.1.2",
-		"svelte-check": "^3.6.0"
+		"svelte-check": "^3.6.0",
+		"svelte-preprocess": "^6.0.3"
 	},
 	"type": "module",
 	"dependencies": {
@@ -31,7 +40,6 @@
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"@types/node": "^22.7.4",
 		"@types/nprogress": "^0.2.3",
-		"@types/uuid": "^10.0.0",
 		"mdsvex": "^0.11.0",
 		"nprogress": "^0.2.0",
 		"sass": "^1.57.1",

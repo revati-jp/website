@@ -14,17 +14,17 @@
 
 1. このリポジトリをフォーク。
 1. フォークしたリポジトリをローカル環境にクローン。
-1. `npm i` などで依存関係をインストール。
-1. `npm run check` などが自分の環境で通るか確認。
+1. `pnpm install` などで依存関係をインストール。
+1. `pnpm run check` などが自分の環境で通るか確認。
 1. 任意で Issue を立てる。
 1. dev ブランチから作業用ブランチを切る。
 ブランチ名は基本的に `feat/*` や `fix/*` の形にしてください。
 1. 作業する
 1. 作業が完了したら次のコマンドが通るかを確認:
-    - `npm run check`
-    - `npm run build`
-    - `npm run fmt`
-    - `npm run lnt`
+    - `pnpm run check`
+    - `pnpm run build`
+    - `pnpm run format`
+    - `pnpm run lint`
 1. リモートにプッシュしたうえでプルリクエストを出す。
 1. マージされるのを待つ。
 

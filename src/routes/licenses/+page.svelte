@@ -32,16 +32,15 @@
 			<ul>
 				{#each softwares as software}
 					{@const licenseInfo = software.license}
-					{@const licenseNames = licenseInfo.licenses}
-					{@const copyright = licenseInfo.copyright}
+					{@const normalizedLicenseNames = licenseInfo.licenses?.trim() ?? ''}
+					{@const licenseNames =
+						normalizedLicenseNames.length > 0 ? normalizedLicenseNames : 'Unknown'}
 					{@const licenseText = licenseInfo.licenseText}
+					{@const hasLicenseText = (licenseText?.trim().length ?? 0) > 0}
 					<li>
 						<details>
 							<summary>{software.id}<span>&nbsp;- {licenseNames}</span></summary>
-							<pre>{#if copyright !== ''}<div
-										class="copyright">{copyright}</div>{/if}{licenseText !== ''
-									? licenseText
-									: licenseNames}
+							<pre>{hasLicenseText ? licenseText : licenseNames}
 							</pre>
 						</details>
 					</li>
@@ -91,15 +90,6 @@
 		overflow: auto;
 	}
 
-	.copyright {
-		margin-top: 4px;
-		margin-bottom: 14px;
-		padding: 11px;
-		font-size: 13px;
-		background-color: #000000a0;
-		white-space: pre-wrap;
-	}
-
 	@include sp {
 		li {
 			padding: 8px;
@@ -117,13 +107,6 @@
 		pre {
 			font-size: 12px;
 			padding: 7px;
-		}
-
-		.copyright {
-			margin-top: 2px;
-			margin-bottom: 10px;
-			padding: 8px;
-			font-size: 12px;
 		}
 	}
 </style>

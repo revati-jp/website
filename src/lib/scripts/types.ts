@@ -59,8 +59,7 @@ export interface Member {
 }
 
 export interface LicenseInfo {
-	licenses: string;
-	licenseText: string;
-	copyright: string;
+	licenses: string | null;
+	licenseText: string | null;
 	[key: string]: unknown;
 }
