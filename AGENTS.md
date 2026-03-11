@@ -15,12 +15,12 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 
 ## Commands
 
-- Clean install: `npm ci`
-- Install deps: `npm install`
-- Start dev server: `npm run dev`
-	- `npm run licenses` to update licenses data
-- Build: `npm run build`
-- Check & format & lint: `npm run check && npm run format && npm run lint`
+- Clean install: `pnpm install --frozen-lockfile`
+- Install deps: `pnpm install`
+- Start dev server: `pnpm run dev`
+	- `pnpm run licenses` to update licenses data
+- Build: `pnpm run build`
+- Check & format & lint: `pnpm run check && pnpm run format && pnpm run lint`
 
 ## Code Style
 

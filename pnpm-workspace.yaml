@@ -1,0 +1,7 @@
+onlyBuiltDependencies:
+  - es5-ext
+  - esbuild
+  - svelte-preprocess
+minimumReleaseAge: 1440
+trustPolicy: no-downgrade
+blockExoticSubdeps: true
