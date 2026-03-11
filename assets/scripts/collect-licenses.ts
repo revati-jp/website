@@ -25,7 +25,6 @@ const ALLOWED_LICENSES = [
 interface GeneratedLicenseInfo {
 	licenses: string | null;
 	licenseText: string | null;
-	copyright: string | null;
 }
 
 const dependencies = await getDependencies(
@@ -61,8 +60,7 @@ const records = await Promise.all(
 			id: `${dependency.name}@${dependency.version}`,
 			license: {
 				licenses: dependency.license,
-				licenseText,
-				copyright: extractCopyright(licenseText)
+				licenseText
 			} satisfies GeneratedLicenseInfo
 		};
 	})
@@ -81,15 +79,6 @@ console.log('Successfully generated src/lib/licenses.json');
 
 function isAllowedLicense(license: string): boolean {
 	return ALLOWED_LICENSES.some((allowed) => license === allowed || license === `(${allowed})`);
-}
-
-function extractCopyright(licenseText?: string | null): string | null {
-	if (licenseText === null || licenseText === undefined || licenseText === '') {
-		return null;
-	}
-
-	const match = licenseText.match(/^(?:>\s*)?(Copyright[^\r\n]*)/m);
-	return match ? match[1].trim() : null;
 }
 
 function isMissingLicenseError(error: unknown): boolean {
