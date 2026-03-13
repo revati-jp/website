@@ -20,7 +20,7 @@
 
 <HeadMetadata
 	title="Licenses"
-	desc="本ウェブサイトの開発に使用しているオープンソースソフトウェア並びにその著作権表示及びライセンス条文の一覧です。"
+	desc="本ウェブサイトの開発に使用しているオープンソースソフトウェア及びそのライセンス条文の一覧です。"
 	canonicalUrl="{SITE_URL}/licenses"
 />
 

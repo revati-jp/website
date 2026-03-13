@@ -188,5 +188,5 @@
 		"404": "The page you are looking for could not be found.",
 		"unknown": "An unexpected error occurred."
 	},
-	"licenses.desc": "The following lists the open-source software used in the development of this website, along with their respective copyright notices and license texts."
+	"licenses.desc": "The following lists the open-source software used in the development of this website, along with their license texts."
 }
