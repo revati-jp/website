@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -39,7 +37,7 @@
 		updateMaxVh001();
 	}
 
-	run(() => {
+	$effect(() => {
 		if (
 			$navigating !== null &&
 			$navigating.to !== null &&

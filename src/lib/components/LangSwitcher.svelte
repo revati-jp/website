@@ -1,18 +1,19 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
 	import { locale } from 'svelte-i18n';
 
 	let lang = $state($locale?.slice(0, 2));
 
 	// Update the locale when the language is changed here.
-	run(() => {
-		locale.set(lang);
+	$effect(() => {
+		if (lang !== undefined) locale.set(lang);
 	});
 
 	// Update the selected language when locale is changed in OTHER places.
-	run(() => {
-		lang = $locale?.slice(0, 2);
+	$effect(() => {
+		const newLang = $locale?.slice(0, 2);
+		if (newLang !== undefined && newLang !== lang) {
+			lang = newLang;
+		}
 	});
 </script>
 

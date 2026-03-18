@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { run } from 'svelte/legacy';
-
 	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
 	import Article from './Article.svelte';
 
@@ -41,12 +39,11 @@
 	let absThumbnailImgPath = $derived(SITE_URL + thumbnailImgPath);
 
 	let date = $derived(willRedirect ? null : id.date);
-	let datePlus9h: Date = $state();
-	run(() => {
-		if (date !== null) {
-			datePlus9h = new Date(date);
-			datePlus9h.setHours(datePlus9h.getHours() + 9);
-		}
+	let datePlus9h: Date | null = $derived.by(() => {
+		if (date === null) return null;
+		const d = new Date(date);
+		d.setHours(d.getHours() + 9);
+		return d;
 	});
 </script>
 
@@ -86,7 +83,7 @@
 		{:else}
 			{#if date !== null}
 				<h2>
-					<time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
+					<time datetime={datePlus9h?.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
 				</h2>
 			{/if}
 			<hr />
