@@ -7,7 +7,11 @@
 	import { SITE_URL } from '$lib/scripts/variables';
 	import { _ } from 'svelte-i18n';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <HeadMetadata title="NEWS" desc="REVATIの最新情報をお届けします。" canonicalUrl="{SITE_URL}/news" />

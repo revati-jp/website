@@ -1,44 +1,52 @@
 <table>
-	<tr>
-		<th colspan="2">個人で受ける場合</th>
-	</tr>
-	<tr>
-		<th>プラン</th>
-		<th>料金</th>
-	</tr>
-	<tr>
-		<td>通常プラン</td>
-		<td>3,000円 / 1時間</td>
-	</tr>
-	<tr>
-		<td>3回まとめてプラン</td>
-		<td>7,500円 / 3時間<span>(1時間あたり500円お得)</span></td>
-	</tr>
-	<tr>
-		<td>1ヶ月定額プラン</td>
-		<td>16,000円 / 1ヶ月<span>(1時間あたり1,000円お得)</span></td>
-	</tr>
+	<thead>
+		<tr>
+			<th colspan="2">個人で受ける場合</th>
+		</tr>
+		<tr>
+			<th>プラン</th>
+			<th>料金</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>通常プラン</td>
+			<td>3,000円 / 1時間</td>
+		</tr>
+		<tr>
+			<td>3回まとめてプラン</td>
+			<td>7,500円 / 3時間<span>(1時間あたり500円お得)</span></td>
+		</tr>
+		<tr>
+			<td>1ヶ月定額プラン</td>
+			<td>16,000円 / 1ヶ月<span>(1時間あたり1,000円お得)</span></td>
+		</tr>
+	</tbody>
 </table>
 <table>
-	<tr>
-		<th colspan="2">チーム単位で受ける場合</th>
-	</tr>
-	<tr>
-		<th>プラン</th>
-		<th>料金</th>
-	</tr>
-	<tr>
-		<td>通常プラン</td>
-		<td>6,000円 / 1時間</td>
-	</tr>
-	<tr>
-		<td>3回まとめてプラン</td>
-		<td>15,000円 / 3時間<span>(1時間あたり1,000円お得)</span></td>
-	</tr>
-	<tr>
-		<td>1ヶ月定額プラン</td>
-		<td>32,000円 / 1ヶ月<span>(1時間あたり2,000円お得)</span></td>
-	</tr>
+	<thead>
+		<tr>
+			<th colspan="2">チーム単位で受ける場合</th>
+		</tr>
+		<tr>
+			<th>プラン</th>
+			<th>料金</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>通常プラン</td>
+			<td>6,000円 / 1時間</td>
+		</tr>
+		<tr>
+			<td>3回まとめてプラン</td>
+			<td>15,000円 / 3時間<span>(1時間あたり1,000円お得)</span></td>
+		</tr>
+		<tr>
+			<td>1ヶ月定額プラン</td>
+			<td>32,000円 / 1ヶ月<span>(1時間あたり2,000円お得)</span></td>
+		</tr>
+	</tbody>
 </table>
 
 <style lang="scss">

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { run } from 'svelte/legacy';
+
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -12,6 +14,12 @@
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
+
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	let maxVh1: number;
 
@@ -31,7 +39,7 @@
 		updateMaxVh001();
 	}
 
-	$: {
+	run(() => {
 		if (
 			$navigating !== null &&
 			$navigating.to !== null &&
@@ -39,7 +47,7 @@
 		)
 			NProgress.start();
 		else NProgress.done();
-	}
+	});
 
 	/**
 	 * Updates the CSS variable `--max-vh001`.
@@ -106,7 +114,7 @@
 
 <Header />
 
-<main id="main-content" inert={$isDrawerMenuOpened}><slot /></main>
+<main id="main-content" inert={$isDrawerMenuOpened}>{@render children?.()}</main>
 
 <Footer />
 

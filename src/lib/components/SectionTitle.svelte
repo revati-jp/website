@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
 
-	/** Name of the section. */
-	export let name: (typeof SECTIONS)[number];
+	interface Props {
+		/** Name of the section. */
+		name: (typeof SECTIONS)[number];
+	}
+
+	let { name }: Props = $props();
 </script>
 
 <h1>{name.toUpperCase()}</h1>

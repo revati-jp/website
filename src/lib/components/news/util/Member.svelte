@@ -1,16 +1,20 @@
 <script lang="ts">
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
-	export let members: {
-		name: string;
-		socials?: {
-			twitter?: string;
-			youtube?: string;
-			twitch?: string;
-			other?: string;
-		};
-		additional?: string;
-	}[];
+	interface Props {
+		members: {
+			name: string;
+			socials?: {
+				twitter?: string;
+				youtube?: string;
+				twitch?: string;
+				other?: string;
+			};
+			additional?: string;
+		}[];
+	}
+
+	let { members }: Props = $props();
 </script>
 
 <ul>

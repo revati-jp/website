@@ -8,21 +8,27 @@
 	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 	import { replaceState } from '$app/navigation';
 
-	export let division: string | null;
-
-	let currentDivisionIndex = 0;
-
-	if (division !== null) {
-		const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
-		if (index !== -1) currentDivisionIndex = index;
+	interface Props {
+		division: string | null;
 	}
 
-	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
+	let { division }: Props = $props();
+
+	let currentDivisionIndex = $state(0);
+
+	$effect(() => {
+		if (division !== null) {
+			const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
+			if (index !== -1) currentDivisionIndex = index;
+		}
+	});
+
+	let currentDivisionMembers = $derived(MEMBER_LISTS[currentDivisionIndex].members);
 
 	let gearsAndSettingsModalContent: {
 		playerName: string;
 		gearsAndSettings: GearsAndSettingsType;
-	} | null = null;
+	} | null = $state(null);
 	isGearsAndSettingsModalOpen.subscribe((isOpen) => {
 		if (!isOpen) gearsAndSettingsModalContent = null;
 	});
@@ -34,7 +40,7 @@
 			<button
 				class="div-btn"
 				class:active={i === currentDivisionIndex}
-				on:click={() => {
+				onclick={() => {
 					currentDivisionIndex = i;
 					replaceState(`?div=${divisionName.replaceAll(' ', '+')}#teams`, {});
 				}}>{divisionName}</button

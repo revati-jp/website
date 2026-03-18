@@ -6,21 +6,25 @@
 	import { fly } from 'svelte/transition';
 	import { _ } from 'svelte-i18n';
 
-	export let articles: ArticleMetadata[];
-	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
-	export let showAll: boolean = false;
+	interface Props {
+		articles: ArticleMetadata[];
+		thumbnailImgFmts: ArticleThumbnailImgFmts;
+		showAll?: boolean;
+	}
+
+	let { articles, thumbnailImgFmts, showAll = false }: Props = $props();
 
 	const MAX_ARTICLES = 4;
-	let currentPage = 0;
+	let currentPage = $state(0);
 
-	const pages = Math.ceil(articles.length / MAX_ARTICLES);
+	const pages = $derived(Math.ceil(articles.length / MAX_ARTICLES));
 
-	$: isFirstPage = currentPage <= 0;
-	$: isLastPage = pages - 1 <= currentPage;
+	let isFirstPage = $derived(currentPage <= 0);
+	let isLastPage = $derived(pages - 1 <= currentPage);
 
 	let flipTo: 1 | -1 = 1;
 
-	$: t9nPageN = [$_('w.pageN.0'), $_('w.pageN.1')];
+	let t9nPageN = $derived([$_('w.pageN.0'), $_('w.pageN.1')]);
 
 	function pageFlip(to: number, isAbsolute = false) {
 		const toAbs = isAbsolute ? to : currentPage + to;
@@ -46,7 +50,7 @@
 </script>
 
 <svelte:window
-	on:keydown={(e) => {
+	onkeydown={(e) => {
 		const key = e.key;
 		if (key === 'ArrowLeft') pageFlip(-1);
 		else if (key === 'ArrowRight') pageFlip(1);
@@ -57,13 +61,13 @@
 	{#if !showAll}
 		<div class="arrows">
 			<button
-				on:click={() => pageFlip(-1)}
+				onclick={() => pageFlip(-1)}
 				aria-label={$_('w.prev')}
 				class="arrow back-arrow"
 				class:inactive={isFirstPage}
 				><ChevronArrow direction="left" transparent={isFirstPage} /></button
 			><button
-				on:click={() => pageFlip(1)}
+				onclick={() => pageFlip(1)}
 				aria-label={$_('w.next')}
 				class="arrow forward-arrow"
 				class:inactive={isLastPage}
@@ -90,8 +94,8 @@
 						aria-label="{t9nPageN[0]}{i + 1}{t9nPageN[1]}"
 						class="indicator"
 						class:active={i === currentPage}
-						on:click={() => pageFlip(i, true)}
-					/>
+						onclick={() => pageFlip(i, true)}
+					></button>
 				</li>
 			{/each}
 		</ul>

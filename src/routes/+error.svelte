@@ -4,11 +4,13 @@
 	import { page } from '$app/stores';
 	import { _ } from 'svelte-i18n';
 
-	$: status = $page.status;
-	$: is404 = status === 404;
-	$: err = $page.error;
-	$: msg = is404 ? 'Page not found' : err !== null ? err.message : 'Something went wrong';
-	$: title = `${status} ${msg}`;
+	let status = $derived($page.status);
+	let is404 = $derived(status === 404);
+	let err = $derived($page.error);
+	let msg = $derived(
+		is404 ? 'Page not found' : err !== null ? err.message : 'Something went wrong'
+	);
+	let title = $derived(`${status} ${msg}`);
 </script>
 
 <svelte:head>

@@ -1,10 +1,16 @@
 <script lang="ts">
 	import type { SvelteComponent } from 'svelte';
 
-	export let body: typeof SvelteComponent;
+	interface Props {
+		body: typeof SvelteComponent;
+	}
+
+	let { body }: Props = $props();
+
+	const SvelteComponent_1 = $derived(body);
 </script>
 
-<article class="article-body"><svelte:component this={body} /></article>
+<article class="article-body"><SvelteComponent_1 /></article>
 
 <style lang="scss" global>
 	@use '$lib/stylesheets/news/article_body';
