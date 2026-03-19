@@ -35,7 +35,7 @@
 					values: { date: $dateI18n(establishedData, { format: 'long' }) }
 				})}</time
 			>
-			{#each revisedDates as date}
+			{#each revisedDates as date (date)}
 				<br />
 				<time datetime={date.toISOString()}
 					>{$_('w.revisedOn', { values: { date: $dateI18n(date, { format: 'long' }) } })}</time

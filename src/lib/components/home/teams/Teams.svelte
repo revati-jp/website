@@ -35,7 +35,7 @@
 </script>
 
 <ul class="divisions">
-	{#each MEMBER_LISTS as { divisionName }, i}
+	{#each MEMBER_LISTS as { divisionName }, i (divisionName)}
 		<li class="division">
 			<button
 				class="div-btn"
@@ -73,7 +73,7 @@
 </Modal>
 
 <noscript>
-	{#each MEMBER_LISTS as { divisionName, divisionSubName, members }}
+	{#each MEMBER_LISTS as { divisionName, divisionSubName, members } (divisionName)}
 		<h2 class="division-name">
 			{divisionName}
 		</h2>
@@ -81,7 +81,7 @@
 			<h3>{divisionSubName}</h3>
 		{/if}
 		<ul class="members noscript">
-			{#each members as member}
+			{#each members as member (member.memberName)}
 				<MemberCard
 					{member}
 					onOpenGearsAndSettingsModal={(detail) => (gearsAndSettingsModalContent = detail)}

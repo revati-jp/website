@@ -86,7 +86,7 @@
 				<td>{sens.toFixed(2)}</td>
 			</tr>
 		{:else if sens !== null}
-			{#each sens as { role, value }}
+			{#each sens as { role, value } (role)}
 				<tr>
 					<td>{$_('w.sens')} ({role.toUpperCase()})</td>
 					<td>{value.toFixed(2)}</td>
@@ -96,7 +96,7 @@
 	</tbody>
 </table>
 
-{#each crosshairs as crosshair, i}
+{#each crosshairs as crosshair, i (crosshair.type)}
 	{@const crosshairColName = crosshair.color}
 	{@const outline = crosshair.outline}
 	{@const outlineColName = outline.color}

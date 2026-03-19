@@ -18,7 +18,7 @@
 </script>
 
 <ul>
-	{#each members as { name, socials, additional }}
+	{#each members as { name, socials, additional } (name)}
 		<li>
 			<strong>{name}</strong>
 			{#if additional !== undefined}

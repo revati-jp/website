@@ -53,7 +53,7 @@
 		<a href="/" draggable="false" tabindex="-1" title={$_('header.back')}><span></span></a>
 		<HbBtn />
 		<ul inert={$isHamburgerButtonEnabled && !$isDrawerMenuOpened}>
-			{#each HEADER_ITEMS as item}
+			{#each HEADER_ITEMS as item (item)}
 				{#if item === 'contact'}
 					<li class="item-contact">
 						<button class:active={false} onclick={() => isContactModalOpen.set(true)}
