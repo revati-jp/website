@@ -31,8 +31,6 @@
 
 <!-- Is the `<dialog>` element really not a non-interactive element? -->
 <!-- And `8px` in the `style` attribute is the sum of the maximum border width of the `<dialog>` element. -->
-<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-<!-- svelte-ignore a11y_click_events_have_key_events -->
 <dialog
 	onclick={(e) => {
 		if (e.target === dialog) close();
