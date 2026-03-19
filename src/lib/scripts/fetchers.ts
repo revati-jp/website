@@ -1,7 +1,7 @@
 import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 import { ArticleId } from '$lib/scripts/ArticleId';
 
-const ARTICLES = import.meta.glob('/articles/[0-9][0-9][0-9][0-9]/([1-9]|1[0-2])/*.md');
+const ARTICLES = import.meta.glob('/articles/[0-9][0-9][0-9][0-9]/*/*.md');
 
 /** Fetches and sorts articles. */
 export async function fetchArticles() {
