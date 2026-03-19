@@ -9,7 +9,6 @@ export async function fetchArticles() {
 	let articles = await Promise.all(
 		Object.entries(ARTICLES).map(async ([path, importArticle]) => {
 			const { metadata } = (await importArticle()) as { metadata: ArticleMetadata };
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			metadata.slug = new ArticleId(path.split('/').pop()!.split('.')[0]);
 			return metadata;
 		})
@@ -39,11 +38,9 @@ function calcOrder(slug: ArticleId) {
 /** Returns the file formats of the each article's thumbnail images (articles without thumbnail images will not be listed). */
 export async function fetchThumbnailImgFmt() {
 	const thumbnailImgs = Object.keys(import.meta.glob(`/static/images/news/thumbnails/*.*`)).map(
-		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		(path) => path.split('/').pop()!
 	);
 	return (await Promise.all(Object.keys(ARTICLES))).reduce((acc: ArticleThumbnailImgFmts, path) => {
-		// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 		const slug = path.split('/').pop()!.split('.')[0];
 		for (const img of thumbnailImgs) {
 			const [name, fmt] = img.split('.');
