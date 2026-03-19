@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { SvelteComponent } from 'svelte';
+	import type { Component } from 'svelte';
 
 	interface Props {
-		body: typeof SvelteComponent;
+		body: Component;
 	}
 
 	let { body }: Props = $props();

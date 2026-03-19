@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
-import type { SvelteComponent } from 'svelte';
+import type { Component } from 'svelte';
 import type { ArticleMetadata } from '$lib/scripts/types';
 import { ArticleId } from '$lib/scripts/ArticleId';
 import { error } from '@sveltejs/kit';
@@ -8,7 +8,7 @@ export const load: PageLoad = async ({
 	params,
 	fetch
 }): Promise<{
-	component: typeof SvelteComponent;
+	component: Component;
 	frontmatter: ArticleMetadata;
 	thumbnailImgFmt: string | null;
 }> => {
@@ -18,7 +18,7 @@ export const load: PageLoad = async ({
 		default: component,
 		metadata: frontmatter
 	}: {
-		default: typeof SvelteComponent;
+		default: Component;
 		metadata: ArticleMetadata;
 	} = await import(`../../../../../articles/${id.year}/${id.month}/${slug}.md`).catch(err);
 	if (!frontmatter.published) err();
