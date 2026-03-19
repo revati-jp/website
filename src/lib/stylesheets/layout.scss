@@ -29,7 +29,8 @@
 main::before {
 	content: '';
 	$dark: rgba($secondary-color, 0.75);
-	background: linear-gradient($dark, $dark),
+	background:
+		linear-gradient($dark, $dark),
 		linear-gradient(
 			165deg,
 			#4e8091 13%,
