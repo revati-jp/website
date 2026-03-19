@@ -61,7 +61,7 @@
 	{#each currentDivisionMembers as member (member.memberName)}
 		<MemberCard
 			{member}
-			on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+			onOpenGearsAndSettingsModal={(detail) => (gearsAndSettingsModalContent = detail)}
 		/>
 	{/each}
 </ul>
@@ -84,7 +84,7 @@
 			{#each members as member}
 				<MemberCard
 					{member}
-					on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+					onOpenGearsAndSettingsModal={(detail) => (gearsAndSettingsModalContent = detail)}
 				/>
 			{/each}
 		</ul>
