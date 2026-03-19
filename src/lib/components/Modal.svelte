@@ -16,9 +16,9 @@
 
 	let { open, title = null, minWidth = 382, children }: Props = $props();
 
-	let dialog: HTMLDialogElement = $state();
+	let dialog: HTMLDialogElement | undefined = $state();
 	$effect(() => {
-		if (dialog !== undefined && dialog !== null) {
+		if (dialog !== undefined) {
 			if ($open && !dialog.open) dialog.showModal();
 			else if (dialog.open) dialog.close();
 		}

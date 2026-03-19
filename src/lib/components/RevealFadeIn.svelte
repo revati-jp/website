@@ -9,7 +9,7 @@
 
 	let { children }: Props = $props();
 
-	let effect: HTMLElement = $state();
+	let effect: HTMLElement | undefined = $state();
 
 	onMount(fadeIn);
 	if (browser) window.addEventListener('scroll', fadeIn);
