@@ -9,6 +9,7 @@
 	import { ArticleId } from '$lib/scripts/ArticleId';
 	import { HEADER_1200x600_PATH, SITE_URL } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
+	import { SvelteDate } from 'svelte/reactivity';
 
 	interface Props {
 		data: PageData;
@@ -41,7 +42,7 @@
 	let date = $derived(willRedirect ? null : id.date);
 	let datePlus9h: Date | null = $derived.by(() => {
 		if (date === null) return null;
-		const d = new Date(date);
+		const d = new SvelteDate(date);
 		d.setHours(d.getHours() + 9);
 		return d;
 	});
