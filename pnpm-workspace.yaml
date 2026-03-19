@@ -6,7 +6,9 @@ onlyBuiltDependencies:
   - '@parcel/watcher'
   - es5-ext
   - esbuild
+  - sharp
   - svelte-preprocess
+  - workerd
 
 trustPolicy: no-downgrade
 
