@@ -66,6 +66,12 @@ export default [
 		}
 	},
 	{
+		files: ['**/*.svelte', '**/*.svelte.ts'],
+		rules: {
+			'svelte/no-navigation-without-resolve': 'off'
+		}
+	},
+	{
 		files: ['**/*.{ts,tsx,mts,cts,svelte}'],
 		rules: {
 			'@typescript-eslint/strict-boolean-expressions': 'error'
