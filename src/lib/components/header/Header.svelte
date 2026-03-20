@@ -14,9 +14,9 @@
 	} from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
-	let url = $derived($page.url);
+	let url = $derived(page.url);
 	let currentSection = $state('');
 
 	if (browser) {

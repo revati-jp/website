@@ -5,7 +5,7 @@
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { ArticleId } from '$lib/scripts/ArticleId';
 	import { HEADER_1200x600_PATH, SITE_URL } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
@@ -24,7 +24,7 @@
 		if (redirectTo !== undefined) goto(redirectTo);
 	});
 
-	let paths = $derived($page.url.pathname.split('/'));
+	let paths = $derived(page.url.pathname.split('/'));
 	let pathnameLength = $derived(paths.length);
 	let isPathnameEndsWithSlash = $derived(paths[pathnameLength - 1] === '');
 	let id = $derived(

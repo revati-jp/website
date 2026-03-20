@@ -1,3 +1,4 @@
+<!-- @migration task: review uses of `navigating` -->
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -7,7 +8,7 @@
 	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
-	import { navigating, page } from '$app/stores';
+	import { navigating, page } from '$app/state';
 	import { COPYRIGHT, SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
@@ -38,11 +39,7 @@
 	}
 
 	$effect(() => {
-		if (
-			$navigating !== null &&
-			$navigating.to !== null &&
-			$navigating.to.url.href !== $page.url.href
-		)
+		if (navigating !== null && navigating.to !== null && navigating.to.url.href !== page.url.href)
 			NProgress.start();
 		else NProgress.done();
 	});
