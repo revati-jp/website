@@ -60,27 +60,6 @@ $arrow-width: 94px;
 	display: inline-block;
 	margin: 0 17px;
 	list-style: none;
-	position: absolute;
-
-	&.pos-0,
-	&.pos-2 {
-		left: 0;
-	}
-
-	&.pos-1,
-	&.pos-3 {
-		right: 0;
-	}
-
-	&.pos-0,
-	&.pos-1 {
-		top: 0;
-	}
-
-	&.pos-2,
-	&.pos-3 {
-		bottom: 0;
-	}
 }
 
 .indicators {
@@ -124,6 +103,32 @@ $arrow-width: 94px;
 		max-width: none;
 		height: auto;
 		justify-content: center;
+	}
+}
+
+.news-list-container:not(.show-all) {
+	.article {
+		position: absolute;
+
+		&.pos-0,
+		&.pos-2 {
+			left: 0;
+		}
+
+		&.pos-1,
+		&.pos-3 {
+			right: 0;
+		}
+
+		&.pos-0,
+		&.pos-1 {
+			top: 0;
+		}
+
+		&.pos-2,
+		&.pos-3 {
+			bottom: 0;
+		}
 	}
 }
 
