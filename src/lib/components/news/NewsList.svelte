@@ -77,8 +77,8 @@
 	{/if}
 
 	<ul class="articles">
-		{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta (meta.slug)}
-			<li class="article" in:pageFlipAnim|global={'in'} out:pageFlipAnim|global={'out'}>
+		{#each showAll ? articles : articles.slice(currentPage * MAX_ARTICLES, (currentPage + 1) * MAX_ARTICLES) as meta, i (meta.slug)}
+			<li class="article pos-{i}" in:pageFlipAnim|global={'in'} out:pageFlipAnim|global={'out'}>
 				<ArticleCard {meta} {thumbnailImgFmts} forceDesktopVerOnSemiNarrow={showAll} />
 			</li>
 		{/each}

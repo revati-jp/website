@@ -53,12 +53,34 @@ $arrow-width: 94px;
 	height: 630px;
 	overflow: hidden;
 	justify-content: left;
+	position: relative;
 }
 
 .article {
 	display: inline-block;
 	margin: 0 17px;
 	list-style: none;
+	position: absolute;
+
+	&.pos-0,
+	&.pos-2 {
+		left: 0;
+	}
+
+	&.pos-1,
+	&.pos-3 {
+		right: 0;
+	}
+
+	&.pos-0,
+	&.pos-1 {
+		top: 0;
+	}
+
+	&.pos-2,
+	&.pos-3 {
+		bottom: 0;
+	}
 }
 
 .indicators {
