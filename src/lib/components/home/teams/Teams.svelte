@@ -29,8 +29,8 @@
 		playerName: string;
 		gearsAndSettings: GearsAndSettingsType;
 	} | null = $state(null);
-	isGearsAndSettingsModalOpen.subscribe((isOpen) => {
-		if (!isOpen) gearsAndSettingsModalContent = null;
+	$effect(() => {
+		if (!$isGearsAndSettingsModalOpen) gearsAndSettingsModalContent = null;
 	});
 </script>
 
