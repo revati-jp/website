@@ -15,7 +15,11 @@
 	import { SITE_URL } from '$lib/scripts/variables';
 	import { _ } from 'svelte-i18n';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <HeadMetadata

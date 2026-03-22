@@ -14,10 +14,10 @@
 	} from '$lib/scripts/stores';
 	import { _ } from 'svelte-i18n';
 	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
-	$: url = $page.url;
-	let currentSection = '';
+	let url = $derived(page.url);
+	let currentSection = $state('');
 
 	if (browser) {
 		window.addEventListener('scroll', function () {
@@ -43,20 +43,20 @@
 	}
 </script>
 
-<div id="header-bg" class:visible={$isDrawerMenuOpened} />
+<div id="header-bg" class:visible={$isDrawerMenuOpened}></div>
 
 <header class:open={$isDrawerMenuOpened}>
 	<nav>
 		{#if !$isHamburgerButtonEnabled}
 			<a href="#main-content" class="skip-btn">{$_('header.skip')}</a>
 		{/if}
-		<a href="/" draggable="false" tabindex="-1"><span title={$_('header.back')} /></a>
+		<a href="/" draggable="false" tabindex="-1" title={$_('header.back')}><span></span></a>
 		<HbBtn />
 		<ul inert={$isHamburgerButtonEnabled && !$isDrawerMenuOpened}>
-			{#each HEADER_ITEMS as item}
+			{#each HEADER_ITEMS as item (item)}
 				{#if item === 'contact'}
 					<li class="item-contact">
-						<button class:active={false} on:click={() => isContactModalOpen.set(true)}
+						<button class:active={false} onclick={() => isContactModalOpen.set(true)}
 							>CONTACT</button
 						>
 					</li>
@@ -67,7 +67,7 @@
 							class:active={currentSection === ''
 								? url.hash === '#' + item || url.pathname.split('/')[1] === item
 								: currentSection === item}
-							on:click={() => isDrawerMenuOpened.set(false)}>{item.toUpperCase()}</a
+							onclick={() => isDrawerMenuOpened.set(false)}>{item.toUpperCase()}</a
 						>
 					</li>
 				{/if}

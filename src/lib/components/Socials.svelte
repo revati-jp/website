@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { SOCIALS } from '$lib/scripts/variables';
 
-	/** Inline styles. */
-	export let style = '';
+	interface Props {
+		/** Inline styles. */
+		style?: string;
+	}
+
+	let { style = '' }: Props = $props();
 </script>
 
 <ul {style}>

@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	export let name: string;
-	export let url: string;
-	export let logo: string;
+	interface Props {
+		name: string;
+		url: string;
+		logo: string;
+	}
+
+	let { name, url, logo }: Props = $props();
 </script>
 
 <li>

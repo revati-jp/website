@@ -8,33 +8,38 @@
 	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 	import { replaceState } from '$app/navigation';
 
-	export let division: string | null;
-
-	let currentDivisionIndex = 0;
-
-	if (division !== null) {
-		const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
-		if (index !== -1) currentDivisionIndex = index;
+	interface Props {
+		division: string | null;
 	}
 
-	$: currentDivisionMembers = MEMBER_LISTS[currentDivisionIndex].members;
+	let { division }: Props = $props();
+
+	let currentDivisionIndex = $state(
+		(() => {
+			if (division === null) return 0;
+			const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
+			return index === -1 ? 0 : index;
+		})()
+	);
+
+	let currentDivisionMembers = $derived(MEMBER_LISTS[currentDivisionIndex].members);
 
 	let gearsAndSettingsModalContent: {
 		playerName: string;
 		gearsAndSettings: GearsAndSettingsType;
-	} | null = null;
-	isGearsAndSettingsModalOpen.subscribe((isOpen) => {
-		if (!isOpen) gearsAndSettingsModalContent = null;
+	} | null = $state(null);
+	$effect(() => {
+		if (!$isGearsAndSettingsModalOpen) gearsAndSettingsModalContent = null;
 	});
 </script>
 
 <ul class="divisions">
-	{#each MEMBER_LISTS as { divisionName }, i}
+	{#each MEMBER_LISTS as { divisionName }, i (divisionName)}
 		<li class="division">
 			<button
 				class="div-btn"
 				class:active={i === currentDivisionIndex}
-				on:click={() => {
+				onclick={() => {
 					currentDivisionIndex = i;
 					replaceState(`?div=${divisionName.replaceAll(' ', '+')}#teams`, {});
 				}}>{divisionName}</button
@@ -55,7 +60,7 @@
 	{#each currentDivisionMembers as member (member.memberName)}
 		<MemberCard
 			{member}
-			on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+			onOpenGearsAndSettingsModal={(detail) => (gearsAndSettingsModalContent = detail)}
 		/>
 	{/each}
 </ul>
@@ -67,7 +72,7 @@
 </Modal>
 
 <noscript>
-	{#each MEMBER_LISTS as { divisionName, divisionSubName, members }}
+	{#each MEMBER_LISTS as { divisionName, divisionSubName, members } (divisionName)}
 		<h2 class="division-name">
 			{divisionName}
 		</h2>
@@ -75,10 +80,10 @@
 			<h3>{divisionSubName}</h3>
 		{/if}
 		<ul class="members noscript">
-			{#each members as member}
+			{#each members as member (member.memberName)}
 				<MemberCard
 					{member}
-					on:openGearsAndSettingsModal={({ detail }) => (gearsAndSettingsModalContent = detail)}
+					onOpenGearsAndSettingsModal={(detail) => (gearsAndSettingsModalContent = detail)}
 				/>
 			{/each}
 		</ul>

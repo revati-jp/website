@@ -6,7 +6,7 @@
 
 {#if 0 < SPONSORS.length}
 	<ul>
-		{#each SPONSORS as { name, url, logo }}
+		{#each SPONSORS as { name, url, logo } (name)}
 			<li>
 				<a href={url} target="_blank" rel="noopener noreferrer">
 					<img src="/images/logos/{logo}" alt={$_('w.logoOf', { values: { name } })} />

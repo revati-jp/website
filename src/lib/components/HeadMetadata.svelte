@@ -1,38 +1,49 @@
 <script lang="ts">
 	import { SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 
-	/**
-	 * ex: `NEWS` (REVATI | NEWS)
-	 *
-	 * Default: `REVATI` (REVATI)
-	 */
-	export let title = 'REVATI';
-	/** ex: `Rinrin.rs のホームページです。` */
-	export let desc: string;
-	/** ex: `{SITE_URL}/profile` */
-	export let canonicalUrl: string;
-	/**
-	 * ex: `article`
-	 *
-	 * Default: `website`
-	 */
-	export let ogType: string = 'website';
-	/**
-	 * ex: `summary`
-	 *
-	 * Default: `summary_large_image`
-	 */
-	export let ogCardType: string = 'summary_large_image';
-	/**
-	 * Whether to set the thumbnail image.
-	 *
-	 * If `false`, set `<meta name="thumbnail" content=ABS_PATH />` and `<meta property="og:image" content=ABS_PATH />`.
-	 *
-	 * Default: `false`
-	 */
-	export let doesNotSetThumbnailImg = false;
+	interface Props {
+		/**
+		 * ex: `NEWS` (REVATI | NEWS)
+		 *
+		 * Default: `REVATI` (REVATI)
+		 */
+		title?: string;
+		/** ex: `Rinrin.rs のホームページです。` */
+		desc: string;
+		/** ex: `{SITE_URL}/profile` */
+		canonicalUrl: string;
+		/**
+		 * ex: `article`
+		 *
+		 * Default: `website`
+		 */
+		ogType?: string;
+		/**
+		 * ex: `summary`
+		 *
+		 * Default: `summary_large_image`
+		 */
+		ogCardType?: string;
+		/**
+		 * Whether to set the thumbnail image.
+		 *
+		 * If `false`, set `<meta name="thumbnail" content=ABS_PATH />` and `<meta property="og:image" content=ABS_PATH />`.
+		 *
+		 * Default: `false`
+		 */
+		doesNotSetThumbnailImg?: boolean;
+	}
 
-	$: fullTitle = title === 'REVATI' ? title : PAGE_FULL_TITLE_PART + title;
+	let {
+		title = 'REVATI',
+		desc,
+		canonicalUrl,
+		ogType = 'website',
+		ogCardType = 'summary_large_image',
+		doesNotSetThumbnailImg = false
+	}: Props = $props();
+
+	let fullTitle = $derived(title === 'REVATI' ? title : PAGE_FULL_TITLE_PART + title);
 	const absThumbnailPath = SITE_URL + '/images/logos/revati/header_mini_oxipng.png';
 </script>
 

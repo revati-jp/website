@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
 	const GOOGLE_MATERIAL_DESIGN_ICONS_PATH = '/images/google-material-design-icons/';
 	const BOOTSTRAP_ICONS_PATH = '/images/bootstrap-icons/';
 	const ICONS = {
@@ -25,17 +25,19 @@
 </script>
 
 <script lang="ts">
-	export let kind: IconKind;
+	interface Props {
+		kind: IconKind;
+		/** The intrinsic width of the image in pixels. */
+		width?: string;
+		/** The intrinsic height of the image in pixels. */
+		height?: string;
+		/** Inline styles. */
+		style?: string;
+	}
 
-	/** The intrinsic width of the image in pixels. */
-	export let width = 'auto';
-	/** The intrinsic height of the image in pixels. */
-	export let height = 'auto';
+	let { kind, width = 'auto', height = 'auto', style = '' }: Props = $props();
 
-	/** Inline styles. */
-	export let style = '';
-
-	const icon = ICONS[kind];
+	const icon = $derived(ICONS[kind]);
 </script>
 
 <img

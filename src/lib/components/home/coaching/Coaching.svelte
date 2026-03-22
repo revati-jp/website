@@ -6,10 +6,10 @@
 	import { _ } from 'svelte-i18n';
 	import { isFeesModalOpen, isCoachesModalOpen } from '$lib/scripts/stores';
 
-	$: modalTitles = {
+	let modalTitles = $derived({
 		fees: $_('coaching.fees'),
 		coaches: $_('coaching.coaches')
-	};
+	});
 
 	const X_HANDLE = 'NGRev_coaching';
 </script>
@@ -26,7 +26,7 @@
 
 <div class="buttons">
 	<div>
-		<button on:click={() => isFeesModalOpen.set(true)}>{modalTitles.fees}</button>
+		<button onclick={() => isFeesModalOpen.set(true)}>{modalTitles.fees}</button>
 		<Modal open={isFeesModalOpen} title={modalTitles.fees} minWidth={485}><Fees /></Modal>
 	</div>
 	<div>
@@ -48,7 +48,7 @@
 		</a>
 	</div>
 	<div>
-		<button on:click={() => isCoachesModalOpen.set(true)}>{modalTitles.coaches}</button>
+		<button onclick={() => isCoachesModalOpen.set(true)}>{modalTitles.coaches}</button>
 		<Modal open={isCoachesModalOpen} title={modalTitles.coaches}><Coaches /></Modal>
 	</div>
 </div>

@@ -1,7 +1,16 @@
+blockExoticSubdeps: true
+
+minimumReleaseAge: 1440
+
 onlyBuiltDependencies:
+  - '@parcel/watcher'
   - es5-ext
   - esbuild
+  - sharp
   - svelte-preprocess
-minimumReleaseAge: 1440
+  - workerd
+
 trustPolicy: no-downgrade
-blockExoticSubdeps: true
+
+trustPolicyExclude:
+  - chokidar@4.0.3

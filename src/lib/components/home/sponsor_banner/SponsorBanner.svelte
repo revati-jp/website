@@ -7,12 +7,12 @@
 	<div class="banner-container" tabindex="-1">
 		<div class="banner-content">
 			<ul>
-				{#each SPONSORS as sponsor}
+				{#each SPONSORS as sponsor (sponsor.name)}
 					<Sponsor {...sponsor} />
 				{/each}
 			</ul>
 			<ul>
-				{#each SPONSORS as sponsor}
+				{#each SPONSORS as sponsor (sponsor.name)}
 					<Sponsor {...sponsor} />
 				{/each}
 			</ul>

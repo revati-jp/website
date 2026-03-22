@@ -23,7 +23,6 @@ async function body() {
 	const articles = (await fetchArticles())
 		.reverse()
 		.map((article) => {
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			const slug = article.slug!;
 
 			let date = slug.date;

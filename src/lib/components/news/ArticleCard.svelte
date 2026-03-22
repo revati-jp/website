@@ -2,17 +2,25 @@
 	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
 	import { HEADER_1200x600_PATH } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
+	import { SvelteDate } from 'svelte/reactivity';
 
-	export let meta: ArticleMetadata;
-	export let thumbnailImgFmts: ArticleThumbnailImgFmts;
-	export let forceDesktopVerOnSemiNarrow = false;
+	interface Props {
+		meta: ArticleMetadata;
+		thumbnailImgFmts: ArticleThumbnailImgFmts;
+		forceDesktopVerOnSemiNarrow?: boolean;
+	}
 
-	const articleId = meta.slug!;
-	const slug = articleId.string;
-	const thumbnailImgFmt = thumbnailImgFmts[slug] ?? null;
-	const date = articleId.date;
-	let datePlus9h = new Date(date);
-	datePlus9h.setHours(datePlus9h.getHours() + 9);
+	let { meta, thumbnailImgFmts, forceDesktopVerOnSemiNarrow = false }: Props = $props();
+
+	const articleId = $derived(meta.slug!);
+	const slug = $derived(articleId.string);
+	const thumbnailImgFmt = $derived(thumbnailImgFmts[slug] ?? null);
+	const date = $derived(articleId.date);
+	const datePlus9h = $derived.by(() => {
+		const d = new SvelteDate(date);
+		d.setHours(d.getHours() + 9);
+		return d;
+	});
 </script>
 
 <a href="/news/articles/{slug}"

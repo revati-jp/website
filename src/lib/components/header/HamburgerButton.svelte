@@ -8,7 +8,7 @@
 {#if $isHamburgerButtonEnabled}
 	<button
 		class:is-opened={$isDrawerMenuOpened}
-		on:click={() => isDrawerMenuOpened.update((v) => !v)}
+		onclick={() => isDrawerMenuOpened.update((v) => !v)}
 		transition:fly|global={{ x: FLY_OFFSET, y: -FLY_OFFSET, duration: 600 }}
 	>
 		{#key $isDrawerMenuOpened}

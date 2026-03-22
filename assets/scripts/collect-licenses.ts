@@ -18,6 +18,7 @@ const ALLOWED_LICENSES = [
 	'MIT',
 	'MIT OR Apache-2.0',
 	'MIT OR CC0-1.0',
+	'MPL-2.0',
 	'OFL-1.1',
 	'Python-2.0'
 ];
