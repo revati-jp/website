@@ -38,8 +38,8 @@
 		if (showAll) return fly(node, { duration: 300, y: 128 });
 
 		const ANIM = {
-			duration: { in: 700, out: 200 },
-			offset: { in: 1024, out: -256 }
+			duration: { in: 500, out: 500 },
+			offset: { in: 320, out: -320 }
 		};
 
 		return fly(node, {
