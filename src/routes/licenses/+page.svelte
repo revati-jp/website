@@ -30,7 +30,7 @@
 		<p>{$_('licenses.desc')}</p>
 		<div class="content">
 			<ul>
-				{#each softwares as software}
+				{#each softwares as software (software.id)}
 					{@const licenseInfo = software.license}
 					{@const normalizedLicenseNames = licenseInfo.licenses?.trim() ?? ''}
 					{@const licenseNames =

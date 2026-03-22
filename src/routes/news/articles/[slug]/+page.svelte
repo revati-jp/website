@@ -5,39 +5,47 @@
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { ArticleId } from '$lib/scripts/ArticleId';
 	import { HEADER_1200x600_PATH, SITE_URL } from '$lib/scripts/variables';
 	import { _, date as dateI18n } from 'svelte-i18n';
+	import { SvelteDate } from 'svelte/reactivity';
 
-	export let data: PageData;
-	$: metadata = data.frontmatter;
+	interface Props {
+		data: PageData;
+	}
 
-	$: redirectTo = metadata.redirect;
-	$: willRedirect = redirectTo !== undefined;
+	let { data }: Props = $props();
+	let metadata = $derived(data.frontmatter);
+
+	let redirectTo = $derived(metadata.redirect);
+	let willRedirect = $derived(redirectTo !== undefined);
 	onMount(() => {
 		if (redirectTo !== undefined) goto(redirectTo);
 	});
 
-	$: paths = $page.url.pathname.split('/');
-	$: pathnameLength = paths.length;
-	$: isPathnameEndsWithSlash = paths[pathnameLength - 1] === '';
-	$: id = new ArticleId(redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)]);
-	$: slug = id.string;
+	let paths = $derived(page.url.pathname.split('/'));
+	let pathnameLength = $derived(paths.length);
+	let isPathnameEndsWithSlash = $derived(paths[pathnameLength - 1] === '');
+	let id = $derived(
+		new ArticleId(redirectTo ?? paths[pathnameLength - (isPathnameEndsWithSlash ? 2 : 1)])
+	);
+	let slug = $derived(id.string);
 
-	$: thumbnailImgFmt = data.thumbnailImgFmt;
-	$: hasThumbnailImg = thumbnailImgFmt !== null;
-	$: thumbnailImgPath = hasThumbnailImg
-		? `/images/news/thumbnails/${slug}.${thumbnailImgFmt}`
-		: HEADER_1200x600_PATH;
-	$: absThumbnailImgPath = SITE_URL + thumbnailImgPath;
+	let thumbnailImgFmt = $derived(data.thumbnailImgFmt);
+	let hasThumbnailImg = $derived(thumbnailImgFmt !== null);
+	let thumbnailImgPath = $derived(
+		hasThumbnailImg ? `/images/news/thumbnails/${slug}.${thumbnailImgFmt}` : HEADER_1200x600_PATH
+	);
+	let absThumbnailImgPath = $derived(SITE_URL + thumbnailImgPath);
 
-	$: date = willRedirect ? null : id.date;
-	let datePlus9h: Date;
-	$: if (date !== null) {
-		datePlus9h = new Date(date);
-		datePlus9h.setHours(datePlus9h.getHours() + 9);
-	}
+	let date = $derived(willRedirect ? null : id.date);
+	let datePlus9h: Date | null = $derived.by(() => {
+		if (date === null) return null;
+		const d = new SvelteDate(date);
+		d.setHours(d.getHours() + 9);
+		return d;
+	});
 </script>
 
 <HeadMetadata
@@ -60,7 +68,7 @@
 
 <div class="container">
 	{#if hasThumbnailImg}
-		<div id="bg" style="background-image: url({thumbnailImgPath});" />
+		<div id="bg" style="background-image: url({thumbnailImgPath});"></div>
 	{/if}
 	<div id="content">
 		{#if hasThumbnailImg}
@@ -76,7 +84,7 @@
 		{:else}
 			{#if date !== null}
 				<h2>
-					<time datetime={datePlus9h.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
+					<time datetime={datePlus9h?.toISOString()}>{$dateI18n(date, { format: 'long' })}</time>
 				</h2>
 			{/if}
 			<hr />

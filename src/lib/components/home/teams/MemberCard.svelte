@@ -1,23 +1,28 @@
 <script lang="ts">
-	import type { Member } from '$lib/scripts/types';
+	import type { GearsAndSettings as GearsAndSettingsType, Member } from '$lib/scripts/types';
 	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
 
 	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
-	import { createEventDispatcher } from 'svelte';
 	import { calcAge, zeroPad } from '$lib/scripts/util';
 	import { _, date } from 'svelte-i18n';
 	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
 
-	export let member: Member;
-	$: age = member.age;
-	$: birthday = member.birthday;
-	$: twitter = member.twitter;
-	$: youtube = member.youtube;
-	$: twitch = member.twitch;
-	$: homepage = member.homepage;
-	$: gearsAndSettings = member.gearsAndSettings;
+	interface Props {
+		member: Member;
+		onOpenGearsAndSettingsModal: (detail: {
+			playerName: string;
+			gearsAndSettings: GearsAndSettingsType;
+		}) => void;
+	}
 
-	const dispatch = createEventDispatcher();
+	let { member, onOpenGearsAndSettingsModal }: Props = $props();
+	let age = $derived(member.age);
+	let birthday = $derived(member.birthday);
+	let twitter = $derived(member.twitter);
+	let youtube = $derived(member.youtube);
+	let twitch = $derived(member.twitch);
+	let homepage = $derived(member.homepage);
+	let gearsAndSettings = $derived(member.gearsAndSettings);
 
 	const LOCK_ICON: {
 		kind: IconKind;
@@ -158,8 +163,8 @@
 		{#if gearsAndSettings !== undefined}
 			<li class="gears-and-settings">
 				<button
-					on:click={() => {
-						dispatch('openGearsAndSettingsModal', {
+					onclick={() => {
+						onOpenGearsAndSettingsModal({
 							playerName: member.memberName,
 							gearsAndSettings
 						});

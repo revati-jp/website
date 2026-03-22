@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let direction: 'left' | 'right';
-	export let transparent = false;
+	interface Props {
+		direction: 'left' | 'right';
+		transparent?: boolean;
+	}
+
+	let { direction, transparent = false }: Props = $props();
 </script>
 
 <div class:transparent>

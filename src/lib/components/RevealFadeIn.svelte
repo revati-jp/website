@@ -3,7 +3,13 @@
 	import { browser } from '$app/environment';
 	import { addClassOnVisible } from '$lib/scripts/util';
 
-	let effect: HTMLElement;
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
+
+	let effect: HTMLElement | undefined = $state();
 
 	onMount(fadeIn);
 	if (browser) window.addEventListener('scroll', fadeIn);
@@ -16,7 +22,7 @@
 
 <div class="effect" class:active={false} bind:this={effect}>
 	<div class="container">
-		<slot />
+		{@render children?.()}
 	</div>
 </div>
 

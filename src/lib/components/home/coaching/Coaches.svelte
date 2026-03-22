@@ -3,7 +3,7 @@
 </script>
 
 <ul>
-	{#each COACHES as { name, icon, affiliation, twitter }}
+	{#each COACHES as { name, icon, affiliation, twitter } (name)}
 		<li>
 			<img src="/images/members/{icon ?? 'noimage.webp'}" alt="" loading="lazy" class="icn" />
 			<span>{affiliation} 所属</span>

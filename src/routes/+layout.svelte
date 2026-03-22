@@ -1,3 +1,4 @@
+<!-- @migration task: review uses of `navigating` -->
 <script lang="ts">
 	import Header from '$lib/components/header/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -7,11 +8,17 @@
 	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
-	import { navigating, page } from '$app/stores';
+	import { navigating, page } from '$app/state';
 	import { COPYRIGHT, SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
+
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 
 	let maxVh1: number;
 
@@ -31,15 +38,11 @@
 		updateMaxVh001();
 	}
 
-	$: {
-		if (
-			$navigating !== null &&
-			$navigating.to !== null &&
-			$navigating.to.url.href !== $page.url.href
-		)
+	$effect(() => {
+		if (navigating !== null && navigating.to !== null && navigating.to.url.href !== page.url.href)
 			NProgress.start();
 		else NProgress.done();
-	}
+	});
 
 	/**
 	 * Updates the CSS variable `--max-vh001`.
@@ -106,7 +109,7 @@
 
 <Header />
 
-<main id="main-content" inert={$isDrawerMenuOpened}><slot /></main>
+<main id="main-content" inert={$isDrawerMenuOpened}>{@render children?.()}</main>
 
 <Footer />
 

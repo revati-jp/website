@@ -53,6 +53,7 @@ $arrow-width: 94px;
 	height: 630px;
 	overflow: hidden;
 	justify-content: left;
+	position: relative;
 }
 
 .article {
@@ -102,6 +103,32 @@ $arrow-width: 94px;
 		max-width: none;
 		height: auto;
 		justify-content: center;
+	}
+}
+
+.news-list-container:not(.show-all) {
+	.article {
+		position: absolute;
+
+		&.pos-0,
+		&.pos-2 {
+			left: 0;
+		}
+
+		&.pos-1,
+		&.pos-3 {
+			right: 0;
+		}
+
+		&.pos-0,
+		&.pos-1 {
+			top: 0;
+		}
+
+		&.pos-2,
+		&.pos-3 {
+			bottom: 0;
+		}
 	}
 }
 

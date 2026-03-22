@@ -2,20 +2,25 @@
 	import type { Writable } from 'svelte/store';
 	import { fly } from 'svelte/transition';
 
-	export let open: Writable<boolean>;
-	export let title: string | null = null;
-	/**
-	 * The minimum width of the modal. (`px`)
-	 *
-	 * But it will be `100vw - 29px` if it is bigger than `100vw - 29px`.
-	 */
-	export let minWidth: number = 382;
+	interface Props {
+		open: Writable<boolean>;
+		title?: string | null;
+		/**
+		 * The minimum width of the modal. (`px`)
+		 *
+		 * But it will be `100vw - 29px` if it is bigger than `100vw - 29px`.
+		 */
+		minWidth?: number;
+		children?: import('svelte').Snippet;
+	}
 
-	let dialog: HTMLDialogElement;
-	open.subscribe((isOpen) => {
-		if (dialog !== undefined && dialog !== null) {
-			if (isOpen) dialog.showModal();
-			else dialog.close();
+	let { open, title = null, minWidth = 382, children }: Props = $props();
+
+	let dialog: HTMLDialogElement | undefined = $state();
+	$effect(() => {
+		if (dialog !== undefined) {
+			if ($open && !dialog.open) dialog.showModal();
+			else if (!$open && dialog.open) dialog.close();
 		}
 	});
 
@@ -26,13 +31,11 @@
 
 <!-- Is the `<dialog>` element really not a non-interactive element? -->
 <!-- And `8px` in the `style` attribute is the sum of the maximum border width of the `<dialog>` element. -->
-<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-<!-- svelte-ignore a11y-click-events-have-key-events -->
 <dialog
-	on:click={(e) => {
+	onclick={(e) => {
 		if (e.target === dialog) close();
 	}}
-	on:close={close}
+	onclose={close}
 	bind:this={dialog}
 	class="modal"
 	style="min-width: min({minWidth}px, 100vw - 8px);"
@@ -42,8 +45,8 @@
 			{#if title !== null}
 				<h1>{title}</h1>
 			{/if}
-			<slot />
-			<button on:click={close}>
+			{@render children?.()}
+			<button onclick={close}>
 				<!--
 					Google Material Symbols and Icons - Close
 					https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@200;opsz@24&icon.query=close&icon.size=24&icon.color=%23e8eaed
