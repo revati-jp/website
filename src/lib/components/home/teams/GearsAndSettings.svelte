@@ -96,7 +96,7 @@
 	</tbody>
 </table>
 
-{#each crosshairs as crosshair, i (crosshair.type)}
+{#each crosshairs as crosshair, i (`${crosshair.type ?? 'null'}-${i}`)}
 	{@const crosshairColName = crosshair.color}
 	{@const outline = crosshair.outline}
 	{@const outlineColName = outline.color}
