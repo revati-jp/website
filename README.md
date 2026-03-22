@@ -11,8 +11,9 @@
 - プロダクト: https://revati.jp
 - 開発: `https://{ブランチ|デプロイ}.revati.pages.dev`
 	- dev ブランチ: https://dev.revati.pages.dev
-	<!-- - アーカイブ:
-		- リニューアル'24 前: https://before-renewal2024.revati.pages.dev
+	- アーカイブ:
+		- Svelte 5 前: https://svelte4.revati.pages.dev
+		<!-- - リニューアル'24 前: https://before-renewal2024.revati.pages.dev
 		- Svelte4 前: https://svelte3.revati.pages.dev
 		- リブラディング'23 前: https://revati-2023.revati.pages.dev  
 		(現 `before-rebranding2023` ブランチ) -->
