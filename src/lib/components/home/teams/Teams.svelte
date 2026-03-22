@@ -14,14 +14,13 @@
 
 	let { division }: Props = $props();
 
-	let currentDivisionIndex = $state(0);
-
-	$effect(() => {
-		if (division !== null) {
+	let currentDivisionIndex = $state(
+		(() => {
+			if (division === null) return 0;
 			const index = MEMBER_LISTS.findIndex(({ divisionName }) => divisionName === division);
-			if (index !== -1) currentDivisionIndex = index;
-		}
-	});
+			return index === -1 ? 0 : index;
+		})()
+	);
 
 	let currentDivisionMembers = $derived(MEMBER_LISTS[currentDivisionIndex].members);
 
