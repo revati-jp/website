@@ -18,7 +18,7 @@
 		"packageManager": {
 			"name": "pnpm",
 			"version": "10.25.0",
-			"onFail": "error"
+			"onFail": "warn"
 		}
 	},
 	"devDependencies": {
