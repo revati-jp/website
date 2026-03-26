@@ -696,6 +696,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'あくいるさや',
+				icon: 'akuiru_saya.webp',
+				role: 'Streamer',
+				country: 'jp',
+				birthday: { year: null, month: 2, day: 24 },
+				age: null,
+				twitter: 'akuiru_saya',
+				youtube: null,
+				twitch: 'akuiru_saya',
+				homepage: null
+			},
+			{
 				memberName: 'きゅうりおいしい',
 				icon: 'kyuurioisii.webp',
 				role: 'Streamer',
