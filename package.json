@@ -6,18 +6,23 @@
 		"dev": "vite dev",
 		"build": "pnpm run licenses && vite build",
 		"preview": "vite preview",
-		"licenses": "tsx assets/scripts/collect-licenses.ts",
+		"licenses": "node assets/scripts/collect-licenses.ts",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"article": "tsx assets/scripts/create-article.ts"
+		"article": "node assets/scripts/create-article.ts"
 	},
 	"packageManager": "pnpm@10.25.0",
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
 			"version": "10.25.0",
+			"onFail": "warn"
+		},
+		"runtime": {
+			"name": "node",
+			"version": ">=23.6.0",
 			"onFail": "warn"
 		}
 	},
@@ -48,7 +53,6 @@
 		"svelte": "^5.55.0",
 		"svelte-i18n": "^4.0.1",
 		"tslib": "^2.8.1",
-		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"uuid": "^13.0.0",
 		"vite": "^8.0.2"
