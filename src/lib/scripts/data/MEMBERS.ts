@@ -256,7 +256,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'Liz',
-				icon: null,
+				icon: 'liz.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: null,
