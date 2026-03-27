@@ -199,7 +199,7 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Troy',
+				memberName: 'Troyda',
 				icon: null,
 				role: 'Coach',
 				country: 'kr',
@@ -223,6 +223,112 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null
+			}
+		]
+	},
+	{
+		divisionName: 'Overwatch Women’s Div',
+		divisionSubName: 'REVATI GIRLS',
+		members: [
+			{
+				memberName: 'ema',
+				icon: 'ema.webp',
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'zen__ema',
+				youtube: null,
+				twitch: 'emao425',
+				homepage: null
+			},
+			{
+				memberName: 'Haffy',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: { year: null, month: 2, day: 7 },
+				age: null,
+				twitter: 'OWHaffy',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Liz',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'GMow_liz',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Mitsuna',
+				icon: 'mitsuna.webp',
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'x_bini_',
+				youtube: null,
+				twitch: null,
+				homepage: 'https://chzzk.naver.com/bf21adda33120014ca6c5a7aa45d9564'
+			},
+			{
+				memberName: 'Usagi',
+				icon: 'usagi.webp',
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'usagi_kr',
+				youtube: null,
+				twitch: 'usagi_kr',
+				homepage: null
+			},
+			{
+				memberName: '翆',
+				icon: 'sui.webp',
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'suisan_ow',
+				youtube: null,
+				twitch: 'sui0zasso',
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ コーチ
+			{
+				memberName: 'Troyda',
+				icon: null,
+				role: 'Coach',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'troy_da0321',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ コーチ
+			// ▼ マネージャー
+			{
+				memberName: '美作小夜子',
+				icon: 'mimasaka.webp',
+				role: 'Manager',
+				country: 'jp',
+				birthday: { year: null, month: 7, day: 4 },
+				age: null,
+				twitter: '345mimasaka',
+				youtube: null,
+				twitch: '345mimasaka_vt',
+				homepage: 'https://lit.link/345mimasaka'
 			}
 		]
 	},
