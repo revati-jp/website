@@ -448,7 +448,7 @@ export const MEMBER_LISTS: {
 				memberName: 'Seungyeon',
 				icon: null,
 				role: 'Player',
-				country: null,
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: 'Seungyeon_ow',
