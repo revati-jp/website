@@ -687,30 +687,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Rainbow Six Siege',
 		members: [
 			{
-				memberName: 'Levia',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Levia_R6',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'NaKyoung',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'NaKyoungsss',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'いとそん',
 				icon: null,
 				role: 'Player',
@@ -747,18 +723,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'ゆうちゃん',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: { year: null, month: 1, day: 13 },
-				age: null,
-				twitter: 'sprYuchan',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'れずりー',
 				icon: null,
 				role: 'Player',
@@ -768,20 +732,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Circle_Eye5',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'MeeeL',
-				icon: null,
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: null, month: 8, day: 16 },
-				age: null,
-				twitter: 'MeeeL_cc',
-				youtube: 'UCRLj16xVlr4nMV-0UauZYHw',
-				twitch: 'meeel0816',
 				homepage: null
 			}
 		]
