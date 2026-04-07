@@ -244,7 +244,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'Haffy',
-				icon: null,
+				icon: 'haffy.webp',
 				role: 'Player',
 				country: 'kr',
 				birthday: { year: null, month: 2, day: 7 },
