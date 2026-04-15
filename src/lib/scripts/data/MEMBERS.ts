@@ -685,6 +685,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'STRIKE',
+				icon: 'strike.webp',
+				role: 'Streamer',
+				country: 'kr',
+				birthday: { year: 2008, month: 5, day: 31 },
+				age: 47,
+				twitter: 'strike_nise',
+				youtube: null,
+				twitch: 'owcstrike',
+				homepage: null
+			},
+			{
 				memberName: 'あくいるさや',
 				icon: 'akuiru_saya.webp',
 				role: 'Streamer',
