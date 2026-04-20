@@ -389,6 +389,18 @@ export const MEMBER_LISTS: {
 			// ▲ コーチ
 			// ▼ マネージャー
 			{
+				memberName: 'YAMININE',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'YAMlCHAAAAN',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'yon',
 				icon: null,
 				role: 'Manager',
