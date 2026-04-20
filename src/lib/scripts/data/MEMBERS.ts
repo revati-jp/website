@@ -349,6 +349,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'yukino',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2009, month: 6, day: 10 },
+				age: null,
+				twitter: 'yukino66_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'はる',
 				icon: null,
 				role: 'Player',
