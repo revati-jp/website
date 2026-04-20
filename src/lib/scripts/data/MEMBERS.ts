@@ -334,114 +334,6 @@ export const MEMBER_LISTS: {
 	},
 	{
 		divisionName: 'Overwatch Academy 1st',
-		divisionSubName: 'パチマリぽこぽこファイターズ',
-		members: [
-			{
-				memberName: 'chihuahua',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Smth_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Ginkgo',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: '_Ginkgo_ow_',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Mattu',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 4, day: 26 },
-				age: null,
-				twitter: 'Mattu_OW',
-				youtube: null,
-				twitch: 'mattsu_ow',
-				homepage: null
-			},
-			{
-				memberName: 'Ril',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Ril7_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'sans',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: '_sans_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'しのたん',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'shlnoqun_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				// Overwatch 部門との兼任
-				memberName: 'にんじゃはむぞー',
-				icon: 'ninja_hamuzo.webp',
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: 2002, month: 11, day: 3 },
-				age: null,
-				twitter: 'ninja_hamuzo',
-				youtube: null,
-				twitch: 'nhzow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['ninja_hamuzo']
-			},
-			// ▲ コーチ
-			// ▼ マネージャー
-			{
-				memberName: 'YAMININE',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'YAMlCHAAAAN',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
-		divisionName: 'Overwatch Academy 2nd',
 		divisionSubName: 'REVATI Chilling Chicken',
 		members: [
 			{
@@ -452,18 +344,6 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2010, month: 11, day: 21 },
 				age: null,
 				twitter: 'RIMK_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'はとぽ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2009, month: 5, day: 26 },
-				age: null,
-				twitter: 'LALA_BLOOMING',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -509,6 +389,18 @@ export const MEMBER_LISTS: {
 			// ▲ コーチ
 			// ▼ マネージャー
 			{
+				memberName: 'YAMININE',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'YAMlCHAAAAN',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'yon',
 				icon: null,
 				role: 'Manager',
@@ -523,7 +415,7 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		divisionName: 'Overwatch Academy 3rd',
+		divisionName: 'Overwatch Academy 2nd',
 		divisionSubName: 'Frozen Star',
 		members: [
 			{
