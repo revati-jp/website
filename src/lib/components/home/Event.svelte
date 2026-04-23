@@ -18,8 +18,6 @@
 >
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
-
 	img {
 		width: 100%;
 		height: auto;
