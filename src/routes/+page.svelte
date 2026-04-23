@@ -6,6 +6,7 @@
 	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
 	import NewsList from '$lib/components/news/NewsList.svelte';
 	import Teams from '$lib/components/home/teams/Teams.svelte';
+	import Event from '$lib/components/home/Event.svelte';
 	import Creative from '$lib/components/home/Creative.svelte';
 	// import Coaching from '$lib/components/home/coaching/Coaching.svelte';
 	// import Goods from '$lib/components/home/Goods.svelte';
@@ -65,6 +66,13 @@
 	<section id="teams">
 		<SectionTitle name="teams" />
 		<div class="content"><Teams division={data.division} /></div>
+	</section>
+</div>
+
+<div class="container">
+	<section id="event">
+		<SectionTitle name="event" />
+		<div class="content"><Event /></div>
 	</section>
 </div>
 
