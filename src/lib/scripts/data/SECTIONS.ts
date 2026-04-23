@@ -2,6 +2,7 @@ export const SECTIONS = [
 	'about',
 	'news',
 	'teams',
+	'event',
 	'creative',
 	// 'coaching',
 	// 'goods',

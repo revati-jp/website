@@ -12,6 +12,7 @@ export const HEADER_ITEMS = [
 	'about',
 	'news',
 	'teams',
+	'event',
 	'creative',
 	// 'goods',
 	'sponsors',
