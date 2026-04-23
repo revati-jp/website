@@ -7,7 +7,7 @@
 <p>
 	{$_('event.desc.0')}<span>REVATI Community CUP</span> <span>"GATEWAY"</span>{$_(
 		'event.desc.1'
-	)}<br />{$_('event.desc.2')}
+	)}<br />{$_('event.desc.2')}<br />{$_('event.desc.3')}
 </p>
 
 <a
