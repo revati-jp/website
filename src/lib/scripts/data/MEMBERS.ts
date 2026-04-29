@@ -661,18 +661,6 @@ export const MEMBER_LISTS: {
 				homepage: 'https://suiumemori.fanbox.cc/'
 			},
 			{
-				memberName: '魔灰えん',
-				icon: 'makaien.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: null, month: 5, day: 5 },
-				age: 666.2,
-				twitter: 'makaien_vtuber',
-				youtube: '@makaien_vtuber',
-				twitch: 'makaien_vtuber',
-				homepage: 'https://lit.link/makaien'
-			},
-			{
 				memberName: '美作小夜子',
 				icon: 'mimasaka.webp',
 				role: 'Streamer & Creator',
