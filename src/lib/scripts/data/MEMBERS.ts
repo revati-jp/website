@@ -431,18 +431,6 @@ export const MEMBER_LISTS: {
 		divisionSubName: 'Frozen Star',
 		members: [
 			{
-				memberName: '5Moon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'SUPerMoon108_OW',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'kou',
 				icon: null,
 				role: 'Player',
@@ -474,18 +462,6 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Zrk0n',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'ろぶ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'rob_ow2',
 				youtube: null,
 				twitch: null,
 				homepage: null
