@@ -13,11 +13,11 @@
 		"format": "prettier --write .",
 		"article": "node assets/scripts/create-article.ts"
 	},
-	"packageManager": "pnpm@10.25.0",
+	"packageManager": "pnpm@10.33.0",
 	"devEngines": {
 		"packageManager": {
 			"name": "pnpm",
-			"version": "10.25.0",
+			"version": "10.33.0",
 			"onFail": "warn"
 		}
 	},
