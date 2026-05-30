@@ -279,18 +279,6 @@ export const MEMBER_LISTS: {
 				homepage: 'https://chzzk.naver.com/bf21adda33120014ca6c5a7aa45d9564'
 			},
 			{
-				memberName: 'Usagi',
-				icon: 'usagi.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'usagi_kr',
-				youtube: null,
-				twitch: 'usagi_kr',
-				homepage: null
-			},
-			{
 				memberName: '翆',
 				icon: 'sui.webp',
 				role: 'Player',
