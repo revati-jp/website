@@ -5,17 +5,19 @@
 <img src="/images/Gateway-tournament-kv.webp" alt="REVATI Community CUP 'GATEWAY'" />
 
 <p>
-	{$_('event.desc.0')}<span>REVATI Community CUP</span> <span>"GATEWAY"</span>{$_(
-		'event.desc.1'
-	)}<br />{$_('event.desc.2')}<br />{$_('event.desc.3')}
+	{$_('event.desc.0')}<br />{$_('event.desc.1')}<a href="https://tournament.revati.jp"
+		>{$_('event.desc.2')}</a
+	>{$_('event.desc.3')}<br />{$_('event.desc.4')}<a href="https://camp-fire.jp/projects/946239/view"
+		>{$_('event.desc.5')}</a
+	>{$_('event.desc.6')}
 </p>
 
-<a
+<!-- <a
 	href="https://tournament.revati.jp/community/gateway"
 	target="_blank"
 	rel="noopener"
 	title="REVATI Community CUP 'GATEWAY' | TOP">{$_('event.websiteLink')}</a
->
+> -->
 
 <style lang="scss">
 	img {
@@ -33,13 +35,13 @@
 		letter-spacing: -0.5px !important;
 	}
 
-	span {
-		font-weight: 900;
-		letter-spacing: 0.5px;
-		white-space: nowrap;
-	}
+	// span {
+	// 	font-weight: 900;
+	// 	letter-spacing: 0.5px;
+	// 	white-space: nowrap;
+	// }
 
-	a {
-		font-size: 22px;
-	}
+	// a {
+	// 	font-size: 22px;
+	// }
 </style>
