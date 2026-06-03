@@ -5,10 +5,14 @@
 <img src="/images/Gateway-tournament-kv.webp" alt="REVATI Community CUP 'GATEWAY'" />
 
 <p>
-	{$_('event.desc.0')}<br />{$_('event.desc.1')}<a href="https://tournament.revati.jp"
-		>{$_('event.desc.2')}</a
-	>{$_('event.desc.3')}<br />{$_('event.desc.4')}<a href="https://camp-fire.jp/projects/946239/view"
-		>{$_('event.desc.5')}</a
+	{$_('event.desc.0')}<br />{$_('event.desc.1')}<a
+		href="https://tournament.revati.jp"
+		target="_blank"
+		rel="noopener">{$_('event.desc.2')}</a
+	>{$_('event.desc.3')}<br />{$_('event.desc.4')}<a
+		href="https://camp-fire.jp/projects/946239/view"
+		target="_blank"
+		rel="noopener noreferrer">{$_('event.desc.5')}</a
 	>{$_('event.desc.6')}
 </p>
 
