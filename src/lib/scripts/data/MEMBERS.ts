@@ -255,30 +255,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'Liz',
-				icon: 'liz.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'GMow_liz',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Mitsuna',
-				icon: 'mitsuna.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'x_bini_',
-				youtube: null,
-				twitch: null,
-				homepage: 'https://chzzk.naver.com/bf21adda33120014ca6c5a7aa45d9564'
-			},
-			{
 				memberName: '翆',
 				icon: 'sui.webp',
 				role: 'Player',
