@@ -464,6 +464,18 @@ export const MEMBER_LISTS: {
 		divisionName: 'Rainbow Six Siege',
 		members: [
 			{
+				memberName: '774',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '774namelessTeom',
+				youtube: '@774noname86',
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'いとそん',
 				icon: null,
 				role: 'Player',
@@ -483,20 +495,32 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: 'Ihaliyi',
+				youtube: 'ihari457',
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'クロ',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'tomato10100',
 				youtube: null,
 				twitch: null,
 				homepage: null
 			},
 			{
-				memberName: 'しぇりー',
+				memberName: 'ねい',
 				icon: null,
 				role: 'Player',
-				country: 'jp',
-				birthday: { year: null, month: 8, day: 5 },
+				country: null,
+				birthday: null,
 				age: null,
-				twitter: 'ShqIIy',
+				twitter: null,
 				youtube: null,
-				twitch: 'shellychaaan',
+				twitch: null,
 				homepage: null
 			},
 			{
@@ -508,7 +532,70 @@ export const MEMBER_LISTS: {
 				age: null,
 				twitter: 'Circle_Eye5',
 				youtube: null,
+				twitch: 'lezrydayo',
+				homepage: null
+			},
+			{
+				memberName: 'ろた',
+				icon: null,
+				role: 'Player',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '2_Lota_2',
+				youtube: null,
 				twitch: null,
+				homepage: null
+			},
+			// ▼ マネージャー
+			{
+				memberName: 'しぇりー',
+				icon: null,
+				role: 'Manager',
+				country: 'jp',
+				birthday: { year: null, month: 8, day: 5 },
+				age: null,
+				twitter: 'ShqIIy',
+				youtube: null,
+				twitch: 'shellychaaan',
+				homepage: null
+			},
+			// ▲ マネージャー
+			// ▼ ストリーマー
+			{
+				memberName: 'EIMu',
+				icon: 'EIMu.webp',
+				role: 'Streamer',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'wolfcatEimuch',
+				youtube: null,
+				twitch: 'eimu0214',
+				homepage: null
+			},
+			{
+				memberName: '二色',
+				icon: '2shikii.webp',
+				role: 'Streamer',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: '2shikii',
+				youtube: '@2shikii',
+				twitch: null,
+				homepage: 'https://lit.link/2shikii'
+			},
+			{
+				memberName: '錵ツカサ',
+				icon: 'Nie-Tsukasa.webp',
+				role: 'Streamer',
+				country: null,
+				birthday: { year: null, month: 10, day: 1 },
+				age: null,
+				twitter: 'nie_tsukasa',
+				youtube: null,
+				twitch: 'nietsukasa',
 				homepage: null
 			}
 		]
