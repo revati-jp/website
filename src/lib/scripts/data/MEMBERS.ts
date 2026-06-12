@@ -159,20 +159,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
-			// ▼ アナリスト
-			{
-				memberName: 'Findirath',
-				icon: null,
-				role: 'Analyst',
-				country: 'us',
-				birthday: { year: 2002, month: 8, day: 9 },
-				age: null,
-				twitter: 'findirath_ow',
-				youtube: null,
-				twitch: 'findirath',
-				homepage: null
-			},
-			// ▲ アナリスト
 			// ▼ コーチ
 			{
 				memberName: 'Byeolha',
@@ -349,20 +335,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'Forte',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'OW_Forte',
-				youtube: '@OW_Forte',
-				twitch: null,
-				homepage: null
-			},
-			// ▲ コーチ
 			// ▼ マネージャー
 			{
 				memberName: 'YAMININE',
