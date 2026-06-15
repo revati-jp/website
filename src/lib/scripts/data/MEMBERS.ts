@@ -311,18 +311,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'はる',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2009, month: 7, day: 29 },
-				age: null,
-				twitter: 'HALU_ovv',
-				youtube: '@HALU-ow',
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: '美味しいチキン',
 				icon: null,
 				role: 'Player',
