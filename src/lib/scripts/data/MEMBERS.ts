@@ -576,6 +576,18 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'Hofac',
+				icon: 'Hofac.webp',
+				role: 'Streamer',
+				country: 'kr',
+				birthday: { year: 2005, month: 1, day: 27 },
+				age: null,
+				twitter: 'HofacOW',
+				youtube: null,
+				twitch: 'hofac_ow',
+				homepage: null
+			},
+			{
 				memberName: 'STRIKE',
 				icon: 'strike.webp',
 				role: 'Streamer',

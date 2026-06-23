@@ -1,6 +1,6 @@
 {
 	"name": "revati_website",
-	"version": "5.0.22",
+	"version": "5.0.23",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -23,33 +23,33 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
-		"@quantco/pnpm-licenses": "2.2.3",
-		"@typescript-eslint/eslint-plugin": "^8.60.0",
-		"@typescript-eslint/parser": "^8.60.0",
-		"eslint": "^10.4.0",
+		"@quantco/pnpm-licenses": "2.4.2",
+		"@typescript-eslint/eslint-plugin": "^8.61.1",
+		"@typescript-eslint/parser": "^8.61.1",
+		"eslint": "^10.5.0",
 		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.17.1",
+		"eslint-plugin-svelte": "^3.19.0",
 		"globals": "^17.6.0",
-		"prettier": "^3.8.3",
-		"prettier-plugin-svelte": "^3.5.2",
-		"svelte-check": "^4.4.8",
+		"prettier": "^3.8.4",
+		"prettier-plugin-svelte": "^4.1.1",
+		"svelte-check": "^4.6.0",
 		"svelte-preprocess": "^6.0.5"
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-cloudflare": "^7.2.8",
-		"@sveltejs/kit": "^2.61.1",
+		"@sveltejs/adapter-cloudflare": "^7.2.9",
+		"@sveltejs/kit": "^2.66.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"@types/node": "^25.9.1",
+		"@types/node": "^25.9.4",
 		"@types/nprogress": "^0.2.3",
 		"mdsvex": "^0.12.7",
 		"nprogress": "^0.2.0",
-		"sass": "^1.100.0",
-		"svelte": "^5.55.9",
+		"sass": "^1.101.0",
+		"svelte": "^5.56.3",
 		"svelte-i18n": "^4.0.1",
 		"tslib": "^2.8.1",
-		"typescript": "^5.9.3",
-		"uuid": "^14.0.0",
-		"vite": "^8.0.14"
+		"typescript": "^6.0.3",
+		"uuid": "^14.0.1",
+		"vite": "^8.0.16"
 	}
 }
