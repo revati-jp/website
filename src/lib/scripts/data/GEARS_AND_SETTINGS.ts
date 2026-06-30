@@ -169,38 +169,38 @@ export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 			}
 		]
 	},
-	hakaisinkotaro: {
-		avatar: 'hakaisinkotaro',
-		dpi: 800,
-		sens: 7.3,
-		mouse: 'Logicool G PRO X SUPERLIGHT',
-		mousepad: 'Padsmith Crucible - Temple of Dreams V2',
-		keyboard: 'Logicool G 913 TKL',
-		crosshairSettings: [
-			{
-				type: 'dot',
-				showsAccuracy: null,
-				color: 'white',
-				thickness: null,
-				rotation: null,
-				crosshairLength: null,
-				centerGap: null,
-				opacity: null,
-				outline: {
-					color: 'black',
-					opacity: 100,
-					thickness: 3.0,
-					shift: 1.0
-				},
-				dot: {
-					type: 'default',
-					size: 2.9,
-					opacity: 100
-				},
-				scaleWithResolution: true
-			}
-		]
-	},
+	// hakaisinkotaro: {
+	// 	avatar: 'hakaisinkotaro',
+	// 	dpi: 800,
+	// 	sens: 7.3,
+	// 	mouse: 'Logicool G PRO X SUPERLIGHT',
+	// 	mousepad: 'Padsmith Crucible - Temple of Dreams V2',
+	// 	keyboard: 'Logicool G 913 TKL',
+	// 	crosshairSettings: [
+	// 		{
+	// 			type: 'dot',
+	// 			showsAccuracy: null,
+	// 			color: 'white',
+	// 			thickness: null,
+	// 			rotation: null,
+	// 			crosshairLength: null,
+	// 			centerGap: null,
+	// 			opacity: null,
+	// 			outline: {
+	// 				color: 'black',
+	// 				opacity: 100,
+	// 				thickness: 3.0,
+	// 				shift: 1.0
+	// 			},
+	// 			dot: {
+	// 				type: 'default',
+	// 				size: 2.9,
+	// 				opacity: 100
+	// 			},
+	// 			scaleWithResolution: true
+	// 		}
+	// 	]
+	// },
 	hofac: {
 		avatar: 'hofac',
 		dpi: 800,

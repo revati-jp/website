@@ -670,19 +670,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: '345mimasaka_vt',
 				homepage: 'https://lit.link/345mimasaka'
-			},
-			{
-				memberName: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			}
 		]
 	}
