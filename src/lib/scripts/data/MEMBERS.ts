@@ -539,11 +539,11 @@ export const MEMBER_LISTS: {
 				icon: '2shikii.webp',
 				role: 'Streamer',
 				country: null,
-				birthday: null,
-				age: null,
+				birthday: { year: null, month: 2, day: 4 },
+				age: 245,
 				twitter: '2shikii',
 				youtube: '@2shikii',
-				twitch: null,
+				twitch: 'nishikingdom',
 				homepage: 'https://lit.link/2shikii'
 			},
 			{
