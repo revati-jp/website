@@ -539,11 +539,11 @@ export const MEMBER_LISTS: {
 				icon: '2shikii.webp',
 				role: 'Streamer',
 				country: null,
-				birthday: null,
-				age: null,
+				birthday: { year: null, month: 2, day: 4 },
+				age: 245,
 				twitter: '2shikii',
 				youtube: '@2shikii',
-				twitch: null,
+				twitch: 'nishikingdom',
 				homepage: 'https://lit.link/2shikii'
 			},
 			{
@@ -670,19 +670,6 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: '345mimasaka_vt',
 				homepage: 'https://lit.link/345mimasaka'
-			},
-			{
-				memberName: '破壊神こたろ',
-				icon: 'hakaisinkotaro.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'mareku1212',
-				youtube: '@hakaisinkotaro',
-				twitch: 'hakaisinnkotaro',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hakaisinkotaro']
 			}
 		]
 	}
