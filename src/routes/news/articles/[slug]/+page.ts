@@ -24,7 +24,9 @@ export const load: PageLoad = async ({
 	if (!frontmatter.published) err();
 
 	const redirectTo = frontmatter.redirect;
-	const thumbnailImgFmt = await (await fetch('/api/articles/thumbnail-imgs'))
+	const thumbnailImgFmt = await (
+		await fetch('/api/articles/thumbnail-imgs')
+	)
 		.json()
 		.then(
 			(imgs: { [slug: string]: string }) =>
