@@ -283,8 +283,8 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		divisionName: 'Overwatch Academy 1st',
-		divisionSubName: 'REVATI Chilling Chicken',
+		divisionName: 'Overwatch Academy A',
+		divisionSubName: 'Aurelia',
 		members: [
 			{
 				memberName: 'RIMK',
@@ -300,12 +300,92 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'yukino',
-				icon: null,
+				icon: 'yukino.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2009, month: 6, day: 10 },
 				age: null,
 				twitter: 'yukino66_',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'zircon',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2005, month: 10, day: 27 },
+				age: null,
+				twitter: 'Zrk0n',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			// ▲ 選手
+			// ▼ スタッフ
+			{
+				memberName: 'CLANK',
+				icon: 'clank.webp',
+				role: 'Coaching Staff',
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
+				age: null,
+				twitter: 'clank_ccc',
+				youtube: null,
+				twitch: 'clank_owl',
+				homepage: null
+			},
+			{
+				memberName: 'YAMININE',
+				icon: null,
+				role: 'Coaching Staff',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'YAMlCHAAAAN',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'yon',
+				icon: 'yon.webp',
+				role: 'Management Staff',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'nqxiv4',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			}
+		]
+	},
+	{
+		divisionName: 'Overwatch Academy B',
+		divisionSubName: 'Bellator',
+		members: [
+			{
+				memberName: 'kou',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2003, month: 7, day: 3 },
+				age: null,
+				twitter: 'ow_kou1',
+				youtube: null,
+				twitch: 'ow_kou',
+				homepage: null
+			},
+			{
+				memberName: 'SeungYeon',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2006, month: 12, day: 23 },
+				age: null,
+				twitter: 'Seungyeon_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -323,93 +403,11 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			// ▲ 選手
-			// ▼ マネージャー
-			{
-				memberName: 'YAMININE',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'YAMlCHAAAAN',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'yon',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'nqxiv4',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
-		divisionName: 'Overwatch Academy 2nd',
-		divisionSubName: 'Frozen Star',
-		members: [
-			{
-				memberName: 'kou',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'ow_kou1',
-				youtube: null,
-				twitch: 'ow_kou',
-				homepage: null
-			},
-			{
-				memberName: 'Seungyeon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Seungyeon_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'zircon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Zrk0n',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'めいざーらもん',
-				icon: null,
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: null, month: 3, day: 13 },
-				age: null,
-				twitter: 'meizorramon_ttv',
-				youtube: '@めいざーらもん',
-				twitch: 'meizorramon',
-				homepage: null
-			},
-			// ▲ コーチ
-			// ▼ マネージャー
+			// ▼ スタッフ
 			{
 				memberName: 'KISHI',
 				icon: 'kishi.webp',
-				role: 'Manager',
+				role: 'Management Staff',
 				country: 'jp',
 				birthday: { year: 2005, month: 9, day: 2 },
 				age: null,
