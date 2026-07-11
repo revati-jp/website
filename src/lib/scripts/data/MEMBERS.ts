@@ -287,6 +287,18 @@ export const MEMBER_LISTS: {
 		divisionSubName: 'Aurelia',
 		members: [
 			{
+				memberName: 'mattu-',
+				icon: 'mattu.webp',
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2008, month: 4, day: 26 },
+				age: null,
+				twitter: 'Mattu_OW',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'RIMK',
 				icon: null,
 				role: 'Player',
@@ -318,6 +330,18 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 10, day: 27 },
 				age: null,
 				twitter: 'Zrk0n',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'たりー',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2009, month: 2, day: 9 },
+				age: null,
+				twitter: 'TheAlcatelRemix',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -367,6 +391,18 @@ export const MEMBER_LISTS: {
 		divisionSubName: 'Bellator',
 		members: [
 			{
+				memberName: 'KOKAGEN',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2010, month: 3, day: 15 },
+				age: null,
+				twitter: 'kl_ezl',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: 'kou',
 				icon: null,
 				role: 'Player',
@@ -386,6 +422,18 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2006, month: 12, day: 23 },
 				age: null,
 				twitter: 'Seungyeon_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Loneliness',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: { year: 2005, month: 5, day: 10 },
+				age: null,
+				twitter: 'Loneliness_ow',
 				youtube: null,
 				twitch: null,
 				homepage: null
@@ -412,6 +460,30 @@ export const MEMBER_LISTS: {
 				birthday: { year: 2005, month: 9, day: 2 },
 				age: null,
 				twitter: 'kishi_krunk',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'まかろん',
+				icon: null,
+				role: 'Coaching Staff (外部)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'macarons_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'ますいぬ',
+				icon: null,
+				role: 'Coaching Staff (外部)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'MasdogM',
 				youtube: null,
 				twitch: null,
 				homepage: null
