@@ -148,7 +148,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'SeungHyeon',
-				icon: 'SeungHyeon.webp',
+				icon: null,
 				role: 'Player',
 				country: 'jp',
 				birthday: null,
@@ -416,7 +416,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'SeungYeon',
-				icon: null,
+				icon: 'SeungYeon.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2006, month: 12, day: 23 },
