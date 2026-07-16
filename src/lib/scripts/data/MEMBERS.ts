@@ -324,7 +324,7 @@ export const MEMBER_LISTS: {
 			},
 			{
 				memberName: 'zircon',
-				icon: null,
+				icon: 'zircon.webp',
 				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2005, month: 10, day: 27 },
