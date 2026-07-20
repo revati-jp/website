@@ -593,18 +593,6 @@ export const MEMBER_LISTS: {
 			// ▲ マネージャー
 			// ▼ ストリーマー
 			{
-				memberName: 'EIMu',
-				icon: 'EIMu.webp',
-				role: 'Streamer',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'wolfcatEimuch',
-				youtube: null,
-				twitch: 'eimu0214',
-				homepage: null
-			},
-			{
 				memberName: '二色',
 				icon: '2shikii.webp',
 				role: 'Streamer',
@@ -667,18 +655,6 @@ export const MEMBER_LISTS: {
 				twitter: 'strike_nise',
 				youtube: null,
 				twitch: 'owcstrike',
-				homepage: null
-			},
-			{
-				memberName: 'あくいるさや',
-				icon: 'akuiru_saya.webp',
-				role: 'Streamer',
-				country: 'jp',
-				birthday: { year: null, month: 2, day: 24 },
-				age: null,
-				twitter: 'akuiru_saya',
-				youtube: null,
-				twitch: 'akuiru_saya',
 				homepage: null
 			},
 			{
