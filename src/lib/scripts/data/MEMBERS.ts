@@ -75,7 +75,7 @@
 //
 
 import type { Member } from '$lib/scripts/types';
-import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
+// import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
 export const MEMBER_LISTS: {
 	divisionName: string;
@@ -86,31 +86,6 @@ export const MEMBER_LISTS: {
 		divisionName: 'Overwatch',
 		members: [
 			{
-				memberName: 'harutoon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'harutoon_ow',
-				youtube: null,
-				twitch: 'harutoon_ow',
-				homepage: null
-			},
-			{
-				memberName: 'HESTY',
-				icon: 'hesty.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 1999, month: 9, day: 17 },
-				age: null,
-				twitter: '__Hestyow',
-				youtube: null,
-				twitch: 'hesty_ow',
-				homepage: null,
-				gearsAndSettings: GEARS_AND_SETTINGS['hesty']
-			},
-			{
 				memberName: 'Imalone',
 				icon: null,
 				role: 'Player',
@@ -120,30 +95,6 @@ export const MEMBER_LISTS: {
 				twitter: 'ow_imalone',
 				youtube: null,
 				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'kirito',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'Kirito0519_OW',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'NOZL',
-				icon: 'nozl.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'nozl_hog',
-				youtube: null,
-				twitch: 'nozl_hog',
 				homepage: null
 			},
 			{
