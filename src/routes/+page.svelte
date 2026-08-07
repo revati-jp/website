@@ -11,6 +11,7 @@
 	// import Coaching from '$lib/components/home/coaching/Coaching.svelte';
 	// import Goods from '$lib/components/home/Goods.svelte';
 	import Sponsors from '$lib/components/home/Sponsors.svelte';
+	import O2blastButton from '$lib/components/home/O2blastButton.svelte';
 
 	import type { PageData } from './$types';
 	import { SITE_URL } from '$lib/scripts/variables';
@@ -29,6 +30,8 @@
 />
 
 <div class="container"><MainVisual /><SponsorBanner /></div>
+
+<O2blastButton />
 
 <div class="container">
 	<section id="about">
