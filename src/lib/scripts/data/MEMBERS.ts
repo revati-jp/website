@@ -27,9 +27,13 @@
 //     role: 'Web Developer',
 //
 //     // 国旗 (任意)
-//     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国となります。
+//     // - 🇯🇵 日本国: 'jp'
+//     // - 🇺🇸 アメリカ合衆国: `us`
+//     // - 🇰🇷 大韓民国: 'kr'
+//     // - 🇹🇼 中華民国（台湾）: 'tw'
 //     // 新しい国旗を追加する場合は `/static/images/flags/` に SVG ファイルとして追加し、
-//     // `/src/lib/scripts/types.ts` に定義される `Member` 型の `country` フィールドの型にファイル名を追加してください。
+//     // `/src/lib/scripts/types.ts` に定義される `Member` 型の `country` フィールドの型にファイル名を追加し、
+//     // 上記の一覧にも追加してください。
 //     country: 'jp',
 //
 //     // 生年月日 (任意)
@@ -85,30 +89,6 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Overwatch',
 		members: [
-			{
-				memberName: 'Imalone',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'ow_imalone',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'SeungHyeon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Hyeon_Seung2',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
@@ -133,18 +113,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: 'fickle_ow',
-				homepage: null
-			},
-			{
-				memberName: 'Troyda',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'troy_da0321',
-				youtube: null,
-				twitch: null,
 				homepage: null
 			},
 			// ▲ コーチ
@@ -192,6 +160,30 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'nova',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Supernova_VuV',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Seo',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'Seo1_owo',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: '翆',
 				icon: 'sui.webp',
 				role: 'Player',
@@ -203,18 +195,30 @@ export const MEMBER_LISTS: {
 				twitch: 'sui0zasso',
 				homepage: null
 			},
+			{
+				memberName: 'なっぷ',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'N4pu_Kin',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
-				memberName: 'Troyda',
-				icon: null,
+				memberName: 'CLANK',
+				icon: 'clank.webp',
 				role: 'Coach',
-				country: 'kr',
-				birthday: null,
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
 				age: null,
-				twitter: 'troy_da0321',
+				twitter: 'clank_ccc',
 				youtube: null,
-				twitch: null,
+				twitch: 'clank_owl',
 				homepage: null
 			},
 			// ▲ コーチ
@@ -297,6 +301,18 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
+			{
+				memberName: '戴戴ダイダイ',
+				icon: null,
+				role: 'Player',
+				country: 'tw',
+				birthday: null,
+				age: 24,
+				twitter: 'hong_die',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ スタッフ
 			{
@@ -363,6 +379,18 @@ export const MEMBER_LISTS: {
 				twitter: 'ow_kou1',
 				youtube: null,
 				twitch: 'ow_kou',
+				homepage: null
+			},
+			{
+				memberName: 'Kust3r',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: { year: 2008, month: 2, day: 29 },
+				age: null,
+				twitter: 'Kust3r_ow',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
