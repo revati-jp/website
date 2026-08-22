@@ -196,6 +196,30 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
+				memberName: 'nova',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Supernova_VuV',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Seo',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'Seo1_owo',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
 				memberName: '翆',
 				icon: 'sui.webp',
 				role: 'Player',
@@ -207,18 +231,30 @@ export const MEMBER_LISTS: {
 				twitch: 'sui0zasso',
 				homepage: null
 			},
+			{
+				memberName: 'なっぷ',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'N4pu_Kin',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
-				memberName: 'Troyda',
-				icon: null,
+				memberName: 'CLANK',
+				icon: 'clank.webp',
 				role: 'Coach',
-				country: 'kr',
-				birthday: null,
+				country: 'jp',
+				birthday: { year: 1998, month: 7, day: 10 },
 				age: null,
-				twitter: 'troy_da0321',
+				twitter: 'clank_ccc',
 				youtube: null,
-				twitch: null,
+				twitch: 'clank_owl',
 				homepage: null
 			},
 			// ▲ コーチ
