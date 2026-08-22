@@ -89,30 +89,6 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Overwatch',
 		members: [
-			{
-				memberName: 'Imalone',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'ow_imalone',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'SeungHyeon',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Hyeon_Seung2',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
@@ -137,18 +113,6 @@ export const MEMBER_LISTS: {
 				twitter: 'Fickle_OW',
 				youtube: null,
 				twitch: 'fickle_ow',
-				homepage: null
-			},
-			{
-				memberName: 'Troyda',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'troy_da0321',
-				youtube: null,
-				twitch: null,
 				homepage: null
 			},
 			// ▲ コーチ
