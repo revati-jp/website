@@ -48,7 +48,7 @@ export interface Member {
 	memberName: string;
 	icon: string | null;
 	role: string | null;
-	country: 'jp' | 'us' | 'kr' | null;
+	country: 'jp' | 'us' | 'kr' | 'tw' | null;
 	birthday: { year: number | null; month: number; day: number } | null;
 	age: number | null;
 	twitter: string | null;

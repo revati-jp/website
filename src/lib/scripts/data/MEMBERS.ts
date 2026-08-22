@@ -27,9 +27,13 @@
 //     role: 'Web Developer',
 //
 //     // 国旗 (任意)
-//     // 'jp' が日本国、`us` がアメリカ合衆国、'kr' が大韓民国となります。
+//     // - 🇯🇵 日本国: 'jp'
+//     // - 🇺🇸 アメリカ合衆国: `us`
+//     // - 🇰🇷 大韓民国: 'kr'
+//     // - 🇹🇼 中華民国（台湾）: 'tw'
 //     // 新しい国旗を追加する場合は `/static/images/flags/` に SVG ファイルとして追加し、
-//     // `/src/lib/scripts/types.ts` に定義される `Member` 型の `country` フィールドの型にファイル名を追加してください。
+//     // `/src/lib/scripts/types.ts` に定義される `Member` 型の `country` フィールドの型にファイル名を追加し、
+//     // 上記の一覧にも追加してください。
 //     country: 'jp',
 //
 //     // 生年月日 (任意)
@@ -297,6 +301,18 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
+			{
+				memberName: '戴戴ダイダイ',
+				icon: null,
+				role: 'Player',
+				country: 'tw',
+				birthday: null,
+				age: 24,
+				twitter: 'hong_die',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ スタッフ
 			{
@@ -363,6 +379,18 @@ export const MEMBER_LISTS: {
 				twitter: 'ow_kou1',
 				youtube: null,
 				twitch: 'ow_kou',
+				homepage: null
+			},
+			{
+				memberName: 'Kust3r',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: { year: 2008, month: 2, day: 29 },
+				age: null,
+				twitter: 'Kust3r_ow',
+				youtube: null,
+				twitch: null,
 				homepage: null
 			},
 			{
