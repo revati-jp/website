@@ -28,7 +28,7 @@
 //
 //     // 国旗 (任意)
 //     // - 🇯🇵 日本国: 'jp'
-//     // - 🇺🇸 アメリカ合衆国: `us`
+//     // - 🇺🇸 アメリカ合衆国: 'us'
 //     // - 🇰🇷 大韓民国: 'kr'
 //     // - 🇹🇼 中華民国（台湾）: 'tw'
 //     // 新しい国旗を追加する場合は `/static/images/flags/` に SVG ファイルとして追加し、
@@ -89,6 +89,78 @@ export const MEMBER_LISTS: {
 	{
 		divisionName: 'Overwatch',
 		members: [
+			{
+				memberName: 'Anarchy',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'OwAnarchy1',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Azue1recker',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'azue1_recker',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'BreadTurtle',
+				icon: null,
+				role: 'Player',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'BreadTurtle_ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Liz',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Liz__ow',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'NHZ',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'ninja_hamuzo',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'Vosa1q',
+				icon: null,
+				role: 'Player',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'Vosa1q',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ 選手
 			// ▼ コーチ
 			{
@@ -115,8 +187,32 @@ export const MEMBER_LISTS: {
 				twitch: 'fickle_ow',
 				homepage: null
 			},
+			{
+				memberName: 'Menhera',
+				icon: null,
+				role: 'Coach',
+				country: 'kr',
+				birthday: null,
+				age: null,
+				twitter: 'menheraa0_0',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			// ▲ コーチ
 			// ▼ マネージャー
+			{
+				memberName: 'KISHI',
+				icon: 'kishi.webp',
+				role: 'Manager',
+				country: 'jp',
+				birthday: { year: 2005, month: 9, day: 2 },
+				age: null,
+				twitter: 'kishi_krunk',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
 			{
 				memberName: 'LUD',
 				icon: null,

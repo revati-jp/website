@@ -1,6 +1,6 @@
 {
 	"name": "revati_website",
-	"version": "5.0.31",
+	"version": "5.0.32",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
