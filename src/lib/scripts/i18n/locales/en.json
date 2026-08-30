@@ -16,6 +16,7 @@
 		"off": "OFF",
 		"prev": "Previous",
 		"next": "Next",
+		"close": "Close",
 		"pageN": ["Page ", " "],
 		"logoOf": "Logo of {name}",
 		"gmoPepaboInc": "GMO Pepabo, Inc.",
@@ -125,6 +126,38 @@
 		"desc": "Our team's acrylic keychains featuring our logo and members are now available! We'd love for you to choose your favorite items and continue supporting REVATI.",
 		"storeLink": "Learn more & Buy here",
 		"storeLinkTitle": "REVATI ( revati_jp ) | Online shopping for original items ∞ SUZURI"
+	},
+	"o2blast": {
+		"buttonTitle": "About the Partnership with O2 Blast",
+		"subtitle": "A Prestigious Esports Team Representing South Korea",
+		"overview": {
+			"title": "Team Overview",
+			"desc": "Founded in 2017, O2 Blast is a prestigious South Korean team that has been competing at the forefront of the scene for many years. Having produced numerous world-class players, the team possesses exceptional development expertise and an outstanding environment to discover and nurture young talent."
+		},
+		"achievements": {
+			"title": "Major Achievements",
+			"desc": [
+				"O2 Blast has achieved remarkable success both in domestic tournaments in Korea and on the international stage. In particular, they boast overwhelming dominance, having won multiple championships in official Korean competitions.",
+				"They remain an unwavering powerhouse, consistently competing at the highest level across eras."
+			],
+			"liquipediaLink": "View O2 Blast's tournament results on Liquipedia"
+		},
+		"players": {
+			"title": "Players on the World Stage",
+			"desc": "Here are some of the notable players who honed their skills at O2 Blast and advanced to world-class teams and international competitions."
+		},
+		"initiative": {
+			"title": "Collaboration with REVATI",
+			"desc": [
+				"REVATI and O2 Blast are collaborating to jointly nurture the next generation of players. By sharing O2 Blast's exceptional coaching philosophy and player development framework, we are building an environment where young prospects from Japan and South Korea can train and interact together.",
+				"Across borders, both teams will continue to elevate and energize the competitive scene."
+			]
+		},
+		"links": {
+			"title": "Related Links",
+			"officialX": "O2 Blast Official X",
+			"officialYouTube": "O2 Blast Official YouTube"
+		}
 	},
 	"privacy": {
 		"privacyPolicy": "Privacy Policy",

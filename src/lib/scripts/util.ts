@@ -57,15 +57,6 @@ function addClassOnVisible_(element: Element | HTMLElement, className: string) {
 	if (element.getBoundingClientRect().top < window.innerHeight) element.classList.add(className);
 }
 
-/**
- * Toggles body scroll prevention.
- *
- * **＊ Must be called in the browser environment.**
- */
-export function toggleScrollPrevention(prevent: boolean) {
-	document.body.style.overflow = prevent ? 'hidden' : 'auto';
-}
-
 /** Calculates the age of a person from their birthday. */
 export function calcAge(birthday: Date) {
 	const today = new Date();

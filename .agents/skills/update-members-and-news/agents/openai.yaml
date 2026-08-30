@@ -1,0 +1,7 @@
+interface:
+  display_name: 'Update REVATI Members & News'
+  short_description: 'REVATI のメンバー更新とニュース記事作成'
+  default_prompt: 'Use $update-members-and-news to update REVATI members and create the related news article.'
+
+policy:
+  allow_implicit_invocation: true

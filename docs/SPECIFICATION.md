@@ -11,6 +11,8 @@
 | 253 | header, header2 | [`header.scss>header`](/src/lib/stylesheets/header/header.scss), [`header.scss>#header2`](/src/lib/stylesheets/header/header.scss) |
 | 252 | header bg | [`header.scss>#header-bg`](/src/lib/stylesheets/header/header.scss) |
 | 132 | header skip btn | [`header.scss>.skip-btn`](/src/lib/stylesheets/header/header.scss) |
+| 112 | O2 Blast btn | [`O2blastButton.svelte`](/src/lib/components/home/O2blastButton.svelte) |
+| 1 | modal close btn | [`modal.scss>button`](/src/lib/stylesheets/modal.scss) |
 | -1 | bg | [`layout.scss>main::before`](/src/lib/stylesheets/layout.scss) |
 
 ---

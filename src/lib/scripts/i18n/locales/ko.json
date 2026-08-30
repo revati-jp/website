@@ -16,6 +16,7 @@
 		"off": "비활성화",
 		"prev": "이전",
 		"next": "다음",
+		"close": "닫기",
 		"pageN": [" ", "페이지"],
 		"logoOf": "{name} 의 로고",
 		"gmoPepaboInc": "GMO Pepabo, Inc.",
@@ -125,6 +126,38 @@
 		"desc": "팀 로고와 멤버들이 담긴 아크릴 키링이 발매되었습니다! 마음에 드는 아이템을 선택해 주시고, 앞으로도 REVATI 를 응원해 주시면 감사하겠습니다.",
 		"storeLink": "상세 정보 및 구매하기",
 		"storeLinkTitle": "REVATI ( revati_jp ) | Online shopping for original items ∞ SUZURI"
+	},
+	"o2blast": {
+		"buttonTitle": "O2 Blast와의 파트너십 안내",
+		"subtitle": "한국을 대표하는 명문 팀",
+		"overview": {
+			"title": "팀 개요",
+			"desc": "O2 Blast는 2017년 창단 이래 오랜 기간 최전선에서 활약해 온 한국의 명문 팀입니다. 세계 정상급 선수들을 수없이 배출해 왔으며, 재능 있는 유망주를 발굴하고 육성하는 뛰어난 지도력과 훌륭한 환경을 갖추고 있습니다."
+		},
+		"achievements": {
+			"title": "주요 성적",
+			"desc": [
+				"한국 국내 공식 대회를 비롯하여 국제 무대에서도 수많은 눈부신 성과를 거두었습니다. 특히 한국 공식 대회에서 다수의 우승을 차지하는 등 압도적인 실력을 자랑합니다.",
+				"언제나 최전선에서 경쟁을 이어가는 부동의 강팀입니다."
+			],
+			"liquipediaLink": "Liquipedia에서 O2 Blast 전적 보기"
+		},
+		"players": {
+			"title": "세계 무대로 진출한 선수들",
+			"desc": "O2 Blast에서 기량을 연마하여 세계 최전선의 팀과 대회로 진출한 주요 선수들입니다."
+		},
+		"initiative": {
+			"title": "REVATI와의 협력",
+			"desc": [
+				"REVATI와 O2 Blast는 차세대를 짊어질 젊은 선수들을 함께 육성하기 위해 협력하고 있습니다. O2 Blast가 보유한 뛰어난 지도 방침과 육성 시스템을 공유하며, 일본과 한국의 유망주들이 함께 훈련하고 교류할 수 있는 환경을 조성하고 있습니다.",
+				"국경을 넘어, 양 팀이 함께 앞으로의 e스포츠 씬을 더욱 발전시켜 나가겠습니다."
+			]
+		},
+		"links": {
+			"title": "관련 링크",
+			"officialX": "O2 Blast 공식 X",
+			"officialYouTube": "O2 Blast 공식 YouTube"
+		}
 	},
 	"privacy": {
 		"privacyPolicy": "Privacy Policy",
