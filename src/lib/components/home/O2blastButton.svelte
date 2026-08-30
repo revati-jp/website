@@ -17,7 +17,7 @@
 		'Vindaim'
 	];
 
-	let isOpen = writable(false);
+	const isOpen = writable(false);
 	let scrollY = $state(0);
 	const isVisible = $derived(0 < scrollY);
 </script>
