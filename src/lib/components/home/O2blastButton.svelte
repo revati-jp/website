@@ -132,7 +132,6 @@
 
 		&:hover,
 		&:focus-visible {
-			border-color: #ffffff66;
 			background-color: #141414;
 			transform: translateY(-3px) scale(1.01);
 
