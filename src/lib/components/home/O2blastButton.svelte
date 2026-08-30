@@ -103,11 +103,11 @@
 		opacity: 0;
 		visibility: hidden;
 		pointer-events: none;
-		transform: translateY(20px);
+		transform: translateY(8px);
 		transition:
-			opacity 0.4s ease,
-			visibility 0.4s ease,
-			transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+			opacity 0.6s ease,
+			visibility 0.6s ease,
+			transform 0.6s ease-out,
 			background-color 0.25s ease;
 
 		&.visible {
