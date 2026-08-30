@@ -24,8 +24,13 @@
 
 <svelte:window bind:scrollY />
 
-<button class:visible={isVisible} onclick={() => isOpen.set(true)}>
-	<img src="/images/logos/O2-Blast.png" alt="O2 Blast" title={$_('o2blast.buttonTitle')} />
+<button
+	class:visible={isVisible}
+	aria-label={$_('o2blast.buttonTitle')}
+	title={$_('o2blast.buttonTitle')}
+	onclick={() => isOpen.set(true)}
+>
+	<img src="/images/logos/O2-Blast.png" alt="O2 Blast" />
 </button>
 
 <Modal open={isOpen} title="O2 Blast">
