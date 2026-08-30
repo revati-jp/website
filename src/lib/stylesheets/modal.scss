@@ -5,13 +5,15 @@ $secondary-color: #ccfbff;
 
 .modal {
 	max-height: 85%;
+	max-height: 85dvh;
 	margin: auto;
 	color: inherit;
 	background-color: #122426;
 	border: 4px solid $secondary-color;
 	padding: 0;
 	border-radius: 6px;
-	overflow: scroll;
+	overflow: auto;
+	overscroll-behavior: contain;
 	scrollbar-color: $old-primary-color transparent;
 	scrollbar-width: thin;
 

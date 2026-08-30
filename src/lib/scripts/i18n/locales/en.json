@@ -16,6 +16,7 @@
 		"off": "OFF",
 		"prev": "Previous",
 		"next": "Next",
+		"close": "Close",
 		"pageN": ["Page ", " "],
 		"logoOf": "Logo of {name}",
 		"gmoPepaboInc": "GMO Pepabo, Inc.",

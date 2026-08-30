@@ -1,6 +1,9 @@
 <script lang="ts">
 	import type { Writable } from 'svelte/store';
+	import { onDestroy } from 'svelte';
 	import { fly } from 'svelte/transition';
+	import { _ } from 'svelte-i18n';
+	import { lockPageScroll } from '$lib/scripts/scrollLock';
 
 	interface Props {
 		open: Writable<boolean>;
@@ -17,11 +20,23 @@
 	let { open, title = null, minWidth = 382, children }: Props = $props();
 
 	let dialog: HTMLDialogElement | undefined = $state();
+	let unlockPageScroll: (() => void) | undefined;
+
 	$effect(() => {
 		if (dialog !== undefined) {
-			if ($open && !dialog.open) dialog.showModal();
-			else if (!$open && dialog.open) dialog.close();
+			if ($open) {
+				if (!dialog.open) dialog.showModal();
+				unlockPageScroll ??= lockPageScroll();
+			} else {
+				if (dialog.open) dialog.close();
+				unlockPageScroll?.();
+				unlockPageScroll = undefined;
+			}
 		}
+	});
+
+	onDestroy(() => {
+		unlockPageScroll?.();
 	});
 
 	function close() {
@@ -42,11 +57,7 @@
 >
 	{#if $open}
 		<div class="modal-content" transition:fly|global={{ y: -64, duration: 240 }}>
-			{#if title !== null}
-				<h1>{title}</h1>
-			{/if}
-			{@render children?.()}
-			<button onclick={close}>
+			<button onclick={close} aria-label={$_('w.close')}>
 				<!--
 					Google Material Symbols and Icons - Close
 					https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@200;opsz@24&icon.query=close&icon.size=24&icon.color=%23e8eaed
@@ -63,6 +74,10 @@
 					/></svg
 				>
 			</button>
+			{#if title !== null}
+				<h1>{title}</h1>
+			{/if}
+			{@render children?.()}
 		</div>
 	{/if}
 </dialog>
