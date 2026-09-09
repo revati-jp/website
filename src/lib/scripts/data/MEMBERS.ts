@@ -594,18 +594,6 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'いはりー',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Ihaliyi',
-				youtube: 'ihari457',
-				twitch: null,
-				homepage: null
-			},
-			{
 				memberName: 'クロ',
 				icon: null,
 				role: 'Player',
@@ -625,30 +613,6 @@ export const MEMBER_LISTS: {
 				birthday: null,
 				age: null,
 				twitter: null,
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'れずりー',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: { year: null, month: 5, day: 5 },
-				age: null,
-				twitter: 'Circle_Eye5',
-				youtube: null,
-				twitch: 'lezrydayo',
-				homepage: null
-			},
-			{
-				memberName: 'ろた',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: '2_Lota_2',
 				youtube: null,
 				twitch: null,
 				homepage: null
