@@ -570,10 +570,84 @@ export const MEMBER_LISTS: {
 		divisionName: 'Rainbow Six Siege',
 		members: [
 			{
+				memberName: 'Anby',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: null,
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 's4kuya3',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 's4kuya3',
+				youtube: null,
+				twitch: 's4kuya3',
+				homepage: null
+			},
+			{
+				memberName: 'Shelly',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: { year: null, month: 8, day: 5 },
+				age: null,
+				twitter: 'ShqIIy',
+				youtube: null,
+				twitch: 'shellychaaan',
+				homepage: null
+			},
+			{
+				memberName: 'Yuno',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: { year: 2004, month: 6, day: 30 },
+				age: null,
+				twitter: null,
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'しゃろん',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'SharoN3_GG',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'xSxychocoCake',
+				icon: null,
+				role: 'Player (Astra)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 's3xychococake',
+				youtube: null,
+				twitch: 'xs3xychococake',
+				homepage: null
+			},
+			// ▲ Astra
+			// ▼ ZERO
+			{
 				memberName: '774',
 				icon: null,
-				role: 'Player',
-				country: null,
+				role: 'Player (Zero)',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: '774namelessTeom',
@@ -582,9 +656,33 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'いとそん',
+				memberName: 'cro',
 				icon: null,
-				role: 'Player',
+				role: 'Player (Zero)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'tomato10100',
+				youtube: null,
+				twitch: null,
+				homepage: null
+			},
+			{
+				memberName: 'cururu',
+				icon: null,
+				role: 'Player (Zero)',
+				country: 'jp',
+				birthday: null,
+				age: null,
+				twitter: 'ir1031',
+				youtube: '@cururu_1031',
+				twitch: 'cururu_9',
+				homepage: null
+			},
+			{
+				memberName: 'itos0n',
+				icon: null,
+				role: 'Player (Zero)',
 				country: 'jp',
 				birthday: { year: null, month: 12, day: 15 },
 				age: null,
@@ -594,34 +692,10 @@ export const MEMBER_LISTS: {
 				homepage: null
 			},
 			{
-				memberName: 'いはりー',
+				memberName: 'ney',
 				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'Ihaliyi',
-				youtube: 'ihari457',
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'クロ',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: 'tomato10100',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'ねい',
-				icon: null,
-				role: 'Player',
-				country: null,
+				role: 'Player (Zero)',
+				country: 'jp',
 				birthday: null,
 				age: null,
 				twitter: null,
@@ -629,50 +703,13 @@ export const MEMBER_LISTS: {
 				twitch: null,
 				homepage: null
 			},
-			{
-				memberName: 'れずりー',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: { year: null, month: 5, day: 5 },
-				age: null,
-				twitter: 'Circle_Eye5',
-				youtube: null,
-				twitch: 'lezrydayo',
-				homepage: null
-			},
-			{
-				memberName: 'ろた',
-				icon: null,
-				role: 'Player',
-				country: null,
-				birthday: null,
-				age: null,
-				twitter: '2_Lota_2',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▼ マネージャー
-			{
-				memberName: 'しぇりー',
-				icon: null,
-				role: 'Manager',
-				country: 'jp',
-				birthday: { year: null, month: 8, day: 5 },
-				age: null,
-				twitter: 'ShqIIy',
-				youtube: null,
-				twitch: 'shellychaaan',
-				homepage: null
-			},
-			// ▲ マネージャー
+			// ▲ ZERO
 			// ▼ ストリーマー
 			{
 				memberName: '二色',
 				icon: '2shikii.webp',
 				role: 'Streamer',
-				country: null,
+				country: 'jp',
 				birthday: { year: null, month: 2, day: 4 },
 				age: 245,
 				twitter: '2shikii',
@@ -684,7 +721,7 @@ export const MEMBER_LISTS: {
 				memberName: '錵ツカサ',
 				icon: 'Nie-Tsukasa.webp',
 				role: 'Streamer',
-				country: null,
+				country: 'jp',
 				birthday: { year: null, month: 10, day: 1 },
 				age: null,
 				twitter: 'nie_tsukasa',
@@ -792,6 +829,30 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: '345mimasaka_vt',
 				homepage: 'https://lit.link/345mimasaka'
+			},
+			{
+				memberName: '二色',
+				icon: '2shikii.webp',
+				role: 'Streamer',
+				country: null,
+				birthday: { year: null, month: 2, day: 4 },
+				age: 245,
+				twitter: '2shikii',
+				youtube: '@2shikii',
+				twitch: 'nishikingdom',
+				homepage: 'https://lit.link/2shikii'
+			},
+			{
+				memberName: '錵ツカサ',
+				icon: 'Nie-Tsukasa.webp',
+				role: 'Streamer',
+				country: null,
+				birthday: { year: null, month: 10, day: 1 },
+				age: null,
+				twitter: 'nie_tsukasa',
+				youtube: null,
+				twitch: 'nietsukasa',
+				homepage: null
 			}
 		]
 	}
