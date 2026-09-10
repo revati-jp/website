@@ -107,7 +107,6 @@ export const LEGACY_DIVISION_IDS: Readonly<Record<string, string>> = {
 	Overwatch: 'overwatch',
 	'Overwatch Women’s Div': 'overwatch-womens',
 	'Overwatch Academy A': 'overwatch-academy-a',
-	'Overwatch Academy B': 'overwatch-academy-b',
 	'Rainbow Six Siege': 'r6-astra',
 	'Content Creator': 'content-creator'
 };
@@ -368,8 +367,8 @@ export const MEMBER_LISTS: Division[] = [
 	{
 		id: 'overwatch-academy-a',
 		sectionId: 'overwatch',
-		divisionName: 'Overwatch Academy A',
-		navLabel: 'Academy A',
+		divisionName: 'Overwatch Academy',
+		navLabel: 'Academy',
 		divisionSubName: 'Aurelia',
 		members: [
 			{
@@ -478,125 +477,6 @@ export const MEMBER_LISTS: Division[] = [
 				birthday: null,
 				age: null,
 				twitter: 'nqxiv4',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			}
-		]
-	},
-	{
-		id: 'overwatch-academy-b',
-		sectionId: 'overwatch',
-		divisionName: 'Overwatch Academy B',
-		navLabel: 'Academy B',
-		divisionSubName: 'Bellator',
-		members: [
-			{
-				memberName: 'KOKAGEN',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2010, month: 3, day: 15 },
-				age: null,
-				twitter: 'kl_ezl',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'kou',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2003, month: 7, day: 3 },
-				age: null,
-				twitter: 'ow_kou1',
-				youtube: null,
-				twitch: 'ow_kou',
-				homepage: null
-			},
-			{
-				memberName: 'Kust3r',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: 2008, month: 2, day: 29 },
-				age: null,
-				twitter: 'Kust3r_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'SeungYeon',
-				icon: 'SeungYeon.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2006, month: 12, day: 23 },
-				age: null,
-				twitter: 'Seungyeon_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Loneliness',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2005, month: 5, day: 10 },
-				age: null,
-				twitter: 'Loneliness_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: '美味しいチキン',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: { year: 2009, month: 7, day: 30 },
-				age: null,
-				twitter: 'fJQU4hgzNhcGscC',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ スタッフ
-			{
-				memberName: 'KISHI',
-				icon: 'kishi.webp',
-				role: 'Management Staff',
-				country: 'jp',
-				birthday: { year: 2005, month: 9, day: 2 },
-				age: null,
-				twitter: 'kishi_krunk',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'まかろん',
-				icon: null,
-				role: 'Coaching Staff (外部)',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'macarons_ow',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'ますいぬ',
-				icon: null,
-				role: 'Coaching Staff (外部)',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'MasdogM',
 				youtube: null,
 				twitch: null,
 				homepage: null

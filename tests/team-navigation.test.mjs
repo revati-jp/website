@@ -40,7 +40,6 @@ test('historical URLs, including the curly apostrophe and split R6 roster, resol
 		['Overwatch', 'overwatch'],
 		['Overwatch Women’s Div', 'overwatch-womens'],
 		['Overwatch Academy A', 'overwatch-academy-a'],
-		['Overwatch Academy B', 'overwatch-academy-b'],
 		['Rainbow Six Siege', 'r6-astra'],
 		['Content Creator', 'content-creator']
 	];
@@ -55,7 +54,16 @@ test('historical URLs, including the curly apostrophe and split R6 roster, resol
 });
 
 test('unknown, empty, removed and inherited-property names safely select the first division', () => {
-	for (const value of [null, '', 'removed-id', '__proto__', 'constructor', 'toString']) {
+	for (const value of [
+		null,
+		'',
+		'removed-id',
+		'overwatch-academy-b',
+		'Overwatch Academy B',
+		'__proto__',
+		'constructor',
+		'toString'
+	]) {
 		assert.equal(resolve(value), sections[0].divisions[0]);
 	}
 });
