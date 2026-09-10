@@ -68,7 +68,7 @@
 <div class="container">
 	<section id="teams">
 		<SectionTitle name="teams" />
-		<div class="content"><Teams division={data.division} /></div>
+		<div class="content"><Teams /></div>
 	</section>
 </div>
 

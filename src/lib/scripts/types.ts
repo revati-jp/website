@@ -44,6 +44,22 @@ export interface GearsAndSettings {
 	}[];
 }
 
+/** A navigation section in TEAMS, not an organizational unit. */
+export interface TeamSection {
+	id: string;
+	label: string;
+}
+
+/** An organizational unit; members remain a flat list within each division. */
+export interface Division {
+	id: string;
+	sectionId: string;
+	divisionName: string;
+	navLabel?: string;
+	divisionSubName?: string;
+	members: Member[];
+}
+
 export interface Member {
 	memberName: string;
 	icon: string | null;

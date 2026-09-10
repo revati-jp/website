@@ -20,6 +20,16 @@ metadata:
 
 ### 1. メンバーを更新する
 
+部門・ナビゲーションの変更では、次の規則に従う:
+
+- `MEMBER_LISTS` は平坦な Division 名簿。既存 Section への部門追加は、一意な固定 `id` と所属 `sectionId` を持つ要素を追加する。
+- 新しい Section が必要な場合だけ、同じファイルの `TEAM_SECTIONS` に `id` と `label` を追加する。
+- 第1階層は `TEAM_SECTIONS` 順、各 Section 内の部門は `MEMBER_LISTS` 順。1部門なら第2階層は自動で非表示になる。
+- 正式名称・`navLabel`・Section label はチームデータで管理し、i18n へ複製しない。
+- 改名・所属変更で Division ID を変更しない。Section 削除時は所属 Division を移動または削除し、旧 URL 対応表 `LEGACY_DIVISION_IDS` の参照先も確認する。
+- 通常のメンバー更新ではナビゲーションを変更しない。部門間の重複所属も勝手に統合しない。
+- 部門変更後は `node --test tests/team-navigation.test.mjs` で所属と旧 URL の整合性を確認する。
+
 `MEMBER_LISTS` に追加・削除・変更を反映する。新しい部門を作る場合は、ユーザー指定の部門名、サブネームを反映する。指定がない場合は既存ファイルの規則に従う。
 
 ユーザーの提供するメンバー情報は基本的に次のテンプレートの形式になっている:

@@ -45,6 +45,9 @@
 		"wasRedirect": ["This article has been moved to ", "."]
 	},
 	"teams": {
+		"selectSection": "Select a division",
+		"selectDivision": "Select a division in {section}",
+		"comingSoon": "Member information is coming soon.",
 		"gearsAndGameSettingsOfThisPlayer": "This player's gears and game settings",
 		"sAvatar": "'s Avatar",
 		"sGearsAndGameSettings": "'s Gears & Game Settings",

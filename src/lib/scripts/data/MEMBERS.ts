@@ -76,18 +76,46 @@
 //     gearsAndSettings: GEARS_AND_SETTINGS['rinrin']
 // }
 //
-// なお、部門の並びは自由です。
+// # 部門・TEAMS ナビゲーションを編集する人へ
 //
+// - MEMBER_LISTS は正式な組織単位 Division の平坦な名簿です。
+// - TEAM_SECTIONS は UI 上の整理単位です。配列順が第1階層の表示順になります。
+// - Division の sectionId で所属を指定し、同じ Section 内は MEMBER_LISTS の配列順で表示します。
+// - 既存 Section への部門追加は MEMBER_LISTS に1要素追加するだけです。
+//   新しい Section を作る場合だけ TEAM_SECTIONS にも追加してください。
+// - id は表示名と独立した一意な固定値です。改名・移動でも変更せず、削除後も再利用しません。
+// - divisionName は正式名称、navLabel は任意の短縮表示名です。名称はここで管理し、i18n に複製しません。
+// - 1部門だけの Section は第2階層を表示しません。空 Section はナビゲーションに表示しません。
+// - Section 削除時は所属 Division も削除するか、別の sectionId に移してください。
+// - URL は `?div=<Division id>#teams`。旧方式での URL の値は LEGACY_DIVISION_IDS で固定して保持します。
+//   Rainbow Six Siege の旧 URL は Astra へ移行します。削除した部門の別名は削除または移行先へ変更します。
+// - 未指定・不明・削除済みの URL は、先頭の表示可能な Section の先頭 Division を表示します。
+// - メンバーの重複所属を、ナビゲーション整理のために統合・削除しないでください。
+// - URL 互換性・所属整合性の検査: `node --test tests/team-navigation.test.mjs`
 
-import type { Member } from '$lib/scripts/types';
+import type { Division, TeamSection } from '$lib/scripts/types';
 // import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
-export const MEMBER_LISTS: {
-	divisionName: string;
-	divisionSubName?: string;
-	members: Member[];
-}[] = [
+export const TEAM_SECTIONS: TeamSection[] = [
+	{ id: 'overwatch', label: 'Overwatch' },
+	{ id: 'rainbow-six-siege', label: 'Rainbow Six Siege' },
+	{ id: 'content-creator', label: 'Content Creator' }
+];
+
+// Historical URL values; do not derive these from current display names.
+export const LEGACY_DIVISION_IDS: Readonly<Record<string, string>> = {
+	Overwatch: 'overwatch',
+	'Overwatch Women’s Div': 'overwatch-womens',
+	'Overwatch Academy A': 'overwatch-academy-a',
+	'Overwatch Academy B': 'overwatch-academy-b',
+	'Rainbow Six Siege': 'r6-astra',
+	'Content Creator': 'content-creator'
+};
+
+export const MEMBER_LISTS: Division[] = [
 	{
+		id: 'overwatch',
+		sectionId: 'overwatch',
 		divisionName: 'Overwatch',
 		members: [
 			{
@@ -229,7 +257,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		id: 'overwatch-womens',
+		sectionId: 'overwatch',
 		divisionName: 'Overwatch Women’s Div',
+		navLabel: 'Women’s Div',
 		divisionSubName: 'REVATI GIRLS',
 		members: [
 			{
@@ -335,7 +366,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		id: 'overwatch-academy-a',
+		sectionId: 'overwatch',
 		divisionName: 'Overwatch Academy A',
+		navLabel: 'Academy A',
 		divisionSubName: 'Aurelia',
 		members: [
 			{
@@ -451,7 +485,10 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		id: 'overwatch-academy-b',
+		sectionId: 'overwatch',
 		divisionName: 'Overwatch Academy B',
+		navLabel: 'Academy B',
 		divisionSubName: 'Bellator',
 		members: [
 			{
@@ -567,12 +604,15 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
-		divisionName: 'Rainbow Six Siege',
+		id: 'r6-astra',
+		sectionId: 'rainbow-six-siege',
+		divisionName: 'Rainbow Six Siege -Astra-',
+		navLabel: 'Astra',
 		members: [
 			{
 				memberName: 'Anby',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -584,7 +624,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 's4kuya3',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -596,7 +636,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Shelly',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: { year: null, month: 8, day: 5 },
 				age: null,
@@ -608,7 +648,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'Yuno',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: { year: 2004, month: 6, day: 30 },
 				age: null,
@@ -620,7 +660,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'しゃろん',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -632,7 +672,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'xSxychocoCake',
 				icon: null,
-				role: 'Player (Astra)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -640,13 +680,19 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: 'xs3xychococake',
 				homepage: null
-			},
-			// ▲ Astra
-			// ▼ ZERO
+			}
+		]
+	},
+	{
+		id: 'r6-zero',
+		sectionId: 'rainbow-six-siege',
+		divisionName: 'Rainbow Six Siege -Zero-',
+		navLabel: 'Zero',
+		members: [
 			{
 				memberName: '774',
 				icon: null,
-				role: 'Player (Zero)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -658,7 +704,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'cro',
 				icon: null,
-				role: 'Player (Zero)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -670,7 +716,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'cururu',
 				icon: null,
-				role: 'Player (Zero)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -682,7 +728,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'itos0n',
 				icon: null,
-				role: 'Player (Zero)',
+				role: 'Player',
 				country: 'jp',
 				birthday: { year: null, month: 12, day: 15 },
 				age: null,
@@ -694,7 +740,7 @@ export const MEMBER_LISTS: {
 			{
 				memberName: 'ney',
 				icon: null,
-				role: 'Player (Zero)',
+				role: 'Player',
 				country: 'jp',
 				birthday: null,
 				age: null,
@@ -702,9 +748,15 @@ export const MEMBER_LISTS: {
 				youtube: null,
 				twitch: null,
 				homepage: null
-			},
-			// ▲ ZERO
-			// ▼ ストリーマー
+			}
+		]
+	},
+	{
+		id: 'r6-streamers',
+		sectionId: 'rainbow-six-siege',
+		divisionName: 'Rainbow Six Siege - Streamers',
+		navLabel: 'Streamers',
+		members: [
 			{
 				memberName: '二色',
 				icon: '2shikii.webp',
@@ -732,6 +784,8 @@ export const MEMBER_LISTS: {
 		]
 	},
 	{
+		id: 'content-creator',
+		sectionId: 'content-creator',
 		divisionName: 'Content Creator',
 		members: [
 			{

@@ -45,6 +45,9 @@
 		"wasRedirect": ["이 기사는 ", " 로 이동되었습니다."]
 	},
 	"teams": {
+		"selectSection": "팀 부문 선택",
+		"selectDivision": "{section} 디비전 선택",
+		"comingSoon": "멤버 정보를 준비 중입니다.",
 		"gearsAndGameSettingsOfThisPlayer": "이 선수의 사용 장치 및 게임 설정",
 		"sAvatar": " 의 아바타",
 		"sGearsAndGameSettings": " 의 사용 장치 및 게임 설정",
