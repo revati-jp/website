@@ -763,30 +763,6 @@ export const MEMBER_LISTS: Division[] = [
 				youtube: null,
 				twitch: '345mimasaka_vt',
 				homepage: 'https://lit.link/345mimasaka'
-			},
-			{
-				memberName: '二色',
-				icon: '2shikii.webp',
-				role: 'Streamer',
-				country: null,
-				birthday: { year: null, month: 2, day: 4 },
-				age: 245,
-				twitter: '2shikii',
-				youtube: '@2shikii',
-				twitch: 'nishikingdom',
-				homepage: 'https://lit.link/2shikii'
-			},
-			{
-				memberName: '錵ツカサ',
-				icon: 'Nie-Tsukasa.webp',
-				role: 'Streamer',
-				country: null,
-				birthday: { year: null, month: 10, day: 1 },
-				age: null,
-				twitter: 'nie_tsukasa',
-				youtube: null,
-				twitch: 'nietsukasa',
-				homepage: null
 			}
 		]
 	}
