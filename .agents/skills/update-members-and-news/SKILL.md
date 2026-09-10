@@ -193,27 +193,28 @@ pnpm run check && pnpm run format && pnpm run lint
     - 数人の場合: `Foo, Bar, Boo join`
     - 退出: `Player A leaves`, `Foo, Bar leave`
     - 両方: `Player A leaves, and Player B joins`
-  - 大人数の場合:
-    - 件名ではメンバー名を省略して、コミットメッセージ本文で箇条書きにする:
-      ```
-      🛠️ Update: 6 members join
+    - 大人数の場合:
+      - 件名ではメンバー名を省略して、コミットメッセージ本文で箇条書きにする:
+        ```
+        🛠️ Update: 6 members join
 
-      - Player A joins
-      - Player B joins
-      - Player C joins
-      - Player D joins
-      - Player E joins
-      - Player F joins
-      ```
-    - 新規部門追加の場合は件名で部門名を入れても良い:
-      ```
-      🛠️ Update: add Apex div.
+        - Player A joins
+        - Player B joins
+        - Player C joins
+        - Player D joins
+        - Player E joins
+        - Player F joins
+        ```
+      - 新規部門追加の場合は件名で部門名を入れても良い:
+        ```
+        🛠️ Update: add Apex div.
 
-      - Player A joins
-      - Player B joins
-      - Player C joins
-      - Player D joins
-      - Player E joins
-      - Player F joins
-      ```
+        - Player A joins
+        - Player B joins
+        - Player C joins
+        - Player D joins
+        - Player E joins
+        - Player F joins
+        ```
+    - 具体的なメンバーの変更内容は、必ず件名か本文のどちらかに載せる。
 - `✨ Feat: add article <ID>`
