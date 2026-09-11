@@ -187,34 +187,34 @@ pnpm run check && pnpm run format && pnpm run lint
 
 コミットはユーザーが行うため、最後に以下のような2つのコミットメッセージもユーザーに提供する。自分でコミットしない。
 
-- `🛠️ Update: *`
+- `chore(members): *`
   - `*` の部分例:
-    - 1人の場合: `Player A joins`
-    - 数人の場合: `Foo, Bar, Boo join`
-    - 退出: `Player A leaves`, `Foo, Bar leave`
-    - 両方: `Player A leaves, and Player B joins`
+    - 1人の場合: `Michael joins`
+    - 数人の場合: `James, John, 佐藤, join`
+    - 退出: `Robert leaves`, `David, 田中 leave`
+    - 両方: `高橋 leaves, and Charlie joins`
     - 大人数の場合:
       - 件名ではメンバー名を省略して、コミットメッセージ本文で箇条書きにする:
         ```
-        🛠️ Update: 6 members join
+        chore(members): 6 members join
 
-        - Player A joins
-        - Player B joins
-        - Player C joins
-        - Player D joins
-        - Player E joins
-        - Player F joins
+        - A joins
+        - B joins
+        - C joins
+        - D joins
+        - E joins
+        - F joins
         ```
       - 新規部門追加の場合は件名で部門名を入れても良い:
         ```
-        🛠️ Update: add Apex div.
+        chore(members): add Apex div.
 
-        - Player A joins
-        - Player B joins
-        - Player C joins
-        - Player D joins
-        - Player E joins
-        - Player F joins
+        - A joins
+        - B joins
+        - C joins
+        - D joins
+        - E joins
+        - F joins
         ```
     - 具体的なメンバーの変更内容は、必ず件名か本文のどちらかに載せる。
-- `✨ Feat: add article <ID>`
+- `feat(news): add article <ID>`
