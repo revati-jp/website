@@ -9,7 +9,7 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 ## Technical Stack
 
 - Frontend: Svelte 5, SvelteKit 2, SCSS
-- Language: TypeScript 5 (strict mode)
+- Language: TypeScript 6 (strict mode)
 - Hosting: Cloudflare Pages
 - Repository: https://github.com/revati-jp/website
 

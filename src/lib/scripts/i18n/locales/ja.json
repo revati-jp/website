@@ -45,6 +45,9 @@
 		"wasRedirect": ["こちらの記事は ", " に移動しました。"]
 	},
 	"teams": {
+		"selectSection": "部門を選択",
+		"selectDivision": "{section} の部門を選択",
+		"comingSoon": "メンバー情報は準備中です。",
 		"gearsAndGameSettingsOfThisPlayer": "この選手の使用デバイスとゲーム設定",
 		"sAvatar": " のアバター",
 		"sGearsAndGameSettings": " の使用デバイス&ゲーム設定",
