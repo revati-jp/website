@@ -37,6 +37,8 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 
 - When using the `z-index` property, ensure you update the Z-Index list in `docs/SPECIFICATION.md`.
 - When adding new CSS variables (not Sass variables), ensure you update the CSS Variable list in `docs/SPECIFICATION.md`.
+- Commit messages should follow the **Conventional Commits** specification.
+  (`<type>[(optional-scope)]: <description>` with optional body and footer)
 
 ## Other Docs
 
