@@ -91,7 +91,7 @@
 	<meta name="theme-color" content="#154c83" />
 
 	<meta name="keywords" content="sarf,revati" />
-	<meta name="author" content="Rinrin.rs <rinrin0413.valley@gmail.com>, GEN3987" />
+	<meta name="author" content="Rinrin.rs <rinrin0413.rs@gmail.com>, GEN3987" />
 	<meta name="copyright" content={COPYRIGHT} />
 
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=4" />
