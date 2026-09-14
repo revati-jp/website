@@ -9,7 +9,7 @@
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/state';
-	import { COPYRIGHT, SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+	import { COPYRIGHT, SOCIALS, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
@@ -86,7 +86,7 @@
 
 	<meta property="og:site_name" content="REVATI" />
 	<meta property="og:locale" content="ja_JP" />
-	<meta name="twitter:site" content={SITE_URL} />
+	<meta name="twitter:site" content={'@' + SOCIALS.twitter} />
 	<!-- ↓ $primary-color -->
 	<meta name="theme-color" content="#154c83" />
 
