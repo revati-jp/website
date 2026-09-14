@@ -39,7 +39,11 @@
 	}
 
 	$effect(() => {
-		if (navigating !== null && navigating.to !== null && navigating.to.url.href !== page.url.href)
+		if (
+			navigating !== null &&
+			navigating.to !== null &&
+			navigating.to.url.pathname !== page.url.pathname
+		)
 			NProgress.start();
 		else NProgress.done();
 	});
