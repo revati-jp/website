@@ -76,7 +76,7 @@
 
 	@include sp {
 		a {
-			margin-inline: 12px;
+			margin-inline: 10px;
 			font-size: 15px;
 		}
 	}
