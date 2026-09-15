@@ -9,7 +9,7 @@
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/state';
-	import { COPYRIGHT, SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+	import { COPYRIGHT, SOCIALS, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
 	import { browser } from '$app/environment';
 	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
 	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
@@ -39,7 +39,11 @@
 	}
 
 	$effect(() => {
-		if (navigating !== null && navigating.to !== null && navigating.to.url.href !== page.url.href)
+		if (
+			navigating !== null &&
+			navigating.to !== null &&
+			navigating.to.url.pathname !== page.url.pathname
+		)
 			NProgress.start();
 		else NProgress.done();
 	});
@@ -82,12 +86,12 @@
 
 	<meta property="og:site_name" content="REVATI" />
 	<meta property="og:locale" content="ja_JP" />
-	<meta name="twitter:site" content={SITE_URL} />
+	<meta name="twitter:site" content={'@' + SOCIALS.twitter} />
 	<!-- ↓ $primary-color -->
 	<meta name="theme-color" content="#154c83" />
 
 	<meta name="keywords" content="sarf,revati" />
-	<meta name="author" content="Rinrin.rs <rinrin0413.valley@gmail.com>, GEN3987" />
+	<meta name="author" content="Rinrin.rs <rinrin0413.rs@gmail.com>, GEN3987" />
 	<meta name="copyright" content={COPYRIGHT} />
 
 	<link rel="icon" href="/images/logos/revati/icon_180px_oxipng.png?v=4" />
