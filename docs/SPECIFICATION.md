@@ -13,7 +13,14 @@
 | 132 | header skip btn | [`header.scss>.skip-btn`](/src/lib/stylesheets/header/header.scss) |
 | 112 | O2 Blast btn | [`O2blastButton.svelte`](/src/lib/components/home/O2blastButton.svelte) |
 | 1 | modal close btn | [`modal.scss>button`](/src/lib/stylesheets/modal.scss) |
-| -1 | bg | [`layout.scss>main::before`](/src/lib/stylesheets/layout.scss) |
+| 1 | main content | [`layout.scss>#main-content`](/src/lib/stylesheets/layout.scss) |
+| 0 | footer | [`layout.scss>footer`](/src/lib/stylesheets/layout.scss) |
+| 0 | bg | [`layout.scss>#bg`](/src/lib/stylesheets/layout.scss) |
+
+`main` and `footer` are flex items that create stacking contexts without changing positioning or containing blocks.
+The footer paints above `#bg` at the same z-index because it occurs later in DOM order.
+The O2 Blast button's z-index is local to `main`, which paints above the footer and below the header and drawer.
+Modal dialogs opened with `showModal()` and their backdrops use the browser's top layer.
 
 ---
 
