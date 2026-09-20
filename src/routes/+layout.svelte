@@ -103,6 +103,8 @@
 	/>
 </svelte:head>
 
+<div id="bg" aria-hidden="true"></div>
+
 <noscript class="global-noscript">
 	JavaScript is disabled in your browser. Some features don't work properly.
 	<br /><br />

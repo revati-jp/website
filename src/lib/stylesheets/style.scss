@@ -21,7 +21,8 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Zen Kaku Gothic New', sans-serif;
 	font-weight: 400;
-	background: $secondary-color;
+	// Blend with the bottom of the page background when Safari exposes the root background.
+	background: #0e0f1f;
 }
 
 body {
