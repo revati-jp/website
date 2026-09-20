@@ -26,8 +26,7 @@
 	z-index: 2048;
 }
 
-main::before {
-	content: '';
+#bg {
 	$dark: rgba($secondary-color, 0.75);
 	background:
 		linear-gradient($dark, $dark),
@@ -41,6 +40,7 @@ main::before {
 			#132f6b 73%,
 			#050946 90%
 		);
+	background-color: $header2-primary-col;
 	background-size: 100% 100%;
 	display: block;
 	position: fixed;
@@ -48,5 +48,16 @@ main::before {
 	left: 0;
 	width: 100%;
 	height: calc($vh001 * 100);
-	z-index: -1;
+	z-index: 0;
+	pointer-events: none;
+}
+
+// These flex items create stacking contexts without changing containing blocks.
+// Keep main's fixed O2 Blast button above the footer, including at the page bottom.
+#main-content {
+	z-index: 1;
+}
+
+footer {
+	z-index: 0;
 }
