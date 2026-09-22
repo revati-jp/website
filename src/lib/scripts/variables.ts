@@ -9,7 +9,7 @@ export const COPYRIGHT = '© 2022 - 2026 REVATI | BSD-3-Clause';
 
 /** Social media links. */
 export const SOCIALS = {
-	email: 'contact.revati@gmail.com',
+	email: 'contact@revati.jp',
 	twitter: 'revati_jp',
 	youtube: '@revati_jp',
 	github: 'revati-jp'
