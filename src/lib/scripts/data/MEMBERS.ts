@@ -192,37 +192,13 @@ export const MEMBER_LISTS: Division[] = [
 			// ▲ 選手
 			// ▼ コーチ
 			{
-				memberName: 'Byeolha',
+				memberName: 'Nyammulba',
 				icon: null,
 				role: 'Coach',
-				country: 'kr',
+				country: null,
 				birthday: null,
 				age: null,
-				twitter: 'ow_byeolha',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Fickle',
-				icon: 'fickle.webp',
-				role: 'Coach',
-				country: 'kr',
-				birthday: { year: 1998, month: 7, day: 9 },
-				age: null,
-				twitter: 'Fickle_OW',
-				youtube: null,
-				twitch: 'fickle_ow',
-				homepage: null
-			},
-			{
-				memberName: 'Menhera',
-				icon: null,
-				role: 'Coach',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'menheraa0_0',
+				twitter: 'NYAMMULBA',
 				youtube: null,
 				twitch: null,
 				homepage: null
