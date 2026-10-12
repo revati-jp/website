@@ -38,7 +38,6 @@ test('published data has unique IDs and valid section and legacy references', ()
 test('historical URLs, including the curly apostrophe and split R6 roster, resolve explicitly', () => {
 	const cases = [
 		['Overwatch', 'overwatch'],
-		['Overwatch Women’s Div', 'overwatch-womens'],
 		['Overwatch Academy A', 'overwatch-academy-a'],
 		['Rainbow Six Siege', 'r6-astra'],
 		['Content Creator', 'content-creator']
@@ -60,6 +59,8 @@ test('unknown, empty, removed and inherited-property names safely select the fir
 		'removed-id',
 		'overwatch-academy-b',
 		'Overwatch Academy B',
+		'overwatch-womens',
+		'Overwatch Women’s Div',
 		'__proto__',
 		'constructor',
 		'toString'
