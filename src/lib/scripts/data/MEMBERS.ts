@@ -105,7 +105,6 @@ export const TEAM_SECTIONS: TeamSection[] = [
 // Historical URL values; do not derive these from current display names.
 export const LEGACY_DIVISION_IDS: Readonly<Record<string, string>> = {
 	Overwatch: 'overwatch',
-	'Overwatch Women’s Div': 'overwatch-womens',
 	'Overwatch Academy A': 'overwatch-academy-a',
 	'Rainbow Six Siege': 'r6-astra',
 	'Content Creator': 'content-creator'
@@ -228,115 +227,6 @@ export const MEMBER_LISTS: Division[] = [
 				youtube: null,
 				twitch: null,
 				homepage: null
-			}
-		]
-	},
-	{
-		id: 'overwatch-womens',
-		sectionId: 'overwatch',
-		divisionName: 'Overwatch Women’s Div',
-		navLabel: 'Women’s Div',
-		divisionSubName: 'REVATI GIRLS',
-		members: [
-			{
-				memberName: 'ema',
-				icon: 'ema.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'zen__ema',
-				youtube: null,
-				twitch: 'emao425',
-				homepage: null
-			},
-			{
-				memberName: 'Haffy',
-				icon: 'haffy.webp',
-				role: 'Player',
-				country: 'kr',
-				birthday: { year: null, month: 2, day: 7 },
-				age: null,
-				twitter: 'OWHaffy',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'nova',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'Supernova_VuV',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: 'Seo',
-				icon: null,
-				role: 'Player',
-				country: 'kr',
-				birthday: null,
-				age: null,
-				twitter: 'Seo1_owo',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			{
-				memberName: '翆',
-				icon: 'sui.webp',
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'suisan_ow',
-				youtube: null,
-				twitch: 'sui0zasso',
-				homepage: null
-			},
-			{
-				memberName: 'なっぷ',
-				icon: null,
-				role: 'Player',
-				country: 'jp',
-				birthday: null,
-				age: null,
-				twitter: 'N4pu_Kin',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
-			// ▲ 選手
-			// ▼ コーチ
-			{
-				memberName: 'CLANK',
-				icon: 'clank.webp',
-				role: 'Coach',
-				country: 'jp',
-				birthday: { year: 1998, month: 7, day: 10 },
-				age: null,
-				twitter: 'clank_ccc',
-				youtube: null,
-				twitch: 'clank_owl',
-				homepage: null
-			},
-			// ▲ コーチ
-			// ▼ マネージャー
-			{
-				memberName: '美作小夜子',
-				icon: 'mimasaka.webp',
-				role: 'Manager',
-				country: 'jp',
-				birthday: { year: null, month: 7, day: 4 },
-				age: null,
-				twitter: '345mimasaka',
-				youtube: null,
-				twitch: '345mimasaka_vt',
-				homepage: 'https://lit.link/345mimasaka'
 			}
 		]
 	},
