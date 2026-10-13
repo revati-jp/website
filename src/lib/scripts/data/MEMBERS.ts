@@ -297,18 +297,6 @@ export const MEMBER_LISTS: Division[] = [
 				twitch: null,
 				homepage: null
 			},
-			{
-				memberName: '戴戴ダイダイ',
-				icon: null,
-				role: 'Player',
-				country: 'tw',
-				birthday: null,
-				age: 24,
-				twitter: 'hong_die',
-				youtube: null,
-				twitch: null,
-				homepage: null
-			},
 			// ▲ 選手
 			// ▼ スタッフ
 			{
