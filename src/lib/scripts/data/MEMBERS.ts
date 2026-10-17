@@ -492,6 +492,18 @@ export const MEMBER_LISTS: Division[] = [
 		navLabel: 'Streamers',
 		members: [
 			{
+				memberName: '音又のる',
+				icon: null,
+				role: 'Streamer',
+				country: null,
+				birthday: null,
+				age: null,
+				twitter: 'noru_vtuber',
+				youtube: null,
+				twitch: 'noru_vtuber',
+				homepage: null
+			},
+			{
 				memberName: '二色',
 				icon: '2shikii.webp',
 				role: 'Streamer',
