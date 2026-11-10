@@ -108,7 +108,7 @@
 // }
 //
 
-import type { GearsAndSettings } from '$lib/scripts/types';
+import type { GearsAndSettings } from '#lib/scripts/types.ts';
 
 export const GEARS_AND_SETTINGS: { [key: string]: GearsAndSettings } = {
 	hesty: {

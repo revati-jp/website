@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SOCIALS } from '$lib/scripts/variables';
+	import { SOCIALS } from '#lib/scripts/variables.ts';
 
 	interface Props {
 		/** Inline styles. */

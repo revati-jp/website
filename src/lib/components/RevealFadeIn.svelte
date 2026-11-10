@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { browser } from '$app/environment';
-	import { addClassOnVisible } from '$lib/scripts/util';
+	import { browser } from '$app/env';
+	import { addClassOnVisible } from '#lib/scripts/util.ts';
 
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -27,5 +27,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/reveal_fade_in';
+	@use 'stylesheets/reveal_fade_in';
 </style>

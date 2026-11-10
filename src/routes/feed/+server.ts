@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types';
-import { fetchArticles } from '$lib/scripts/fetchers';
-import { SITE_URL, PAGE_FULL_TITLE_PART, COPYRIGHT, SOCIALS } from '$lib/scripts/variables';
+import { fetchArticles } from '#lib/scripts/fetchers.ts';
+import { SITE_URL, PAGE_FULL_TITLE_PART, COPYRIGHT, SOCIALS } from '#lib/scripts/variables.ts';
 import { v5 as uuidV5 } from 'uuid';
 
 export const prerender = true;

@@ -96,7 +96,7 @@ title: ここにタイトル
 ---
 
 <script>
-	import Member from '$lib/components/news/util/Member.svelte';
+	import Member from '#lib/components/news/util/Member.svelte';
 
 	const PLAYERS = [
 		{ name: 'Player1', socials: { twitter: 'player1' } },

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
+	import MaterialIcon from '#lib/components/MaterialIcon.svelte';
 
 	interface Props {
 		members: {
@@ -98,7 +98,7 @@
 </ul>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/color' as *;
 
 	li {
 		margin-bottom: 0.4rem;

@@ -1,5 +1,5 @@
-import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
-import { ArticleId } from '$lib/scripts/ArticleId';
+import type { ArticleMetadata, ArticleThumbnailImgFmts } from '#lib/scripts/types.ts';
+import { ArticleId } from '#lib/scripts/ArticleId.ts';
 
 const ARTICLES = import.meta.glob('/articles/[0-9][0-9][0-9][0-9]/*/*.md');
 

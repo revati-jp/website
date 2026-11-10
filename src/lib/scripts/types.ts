@@ -1,4 +1,4 @@
-import { ArticleId } from '$lib/scripts/ArticleId';
+import { ArticleId } from '#lib/scripts/ArticleId.ts';
 
 /** The `slug` field will be provided if the instance was provided by the API. */
 export interface ArticleMetadata {

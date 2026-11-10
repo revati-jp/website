@@ -24,7 +24,7 @@ export const SITE_URL = 'https://revati.jp';
  * Usage:
  *
  * ```ts
- * import { PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+ * import { PAGE_FULL_TITLE_PART } from '#lib/scripts/variables.ts';
  * const FULL_TITLE = PAGE_FULL_TITLE_PART + 'Home';
  * ```
  */

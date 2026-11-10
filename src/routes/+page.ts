@@ -1,6 +1,6 @@
 import type { PageLoad } from './$types';
-import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
-import { reconstructIdsOfArticleMetadata } from '$lib/scripts/util';
+import type { ArticleMetadata, ArticleThumbnailImgFmts } from '#lib/scripts/types.ts';
+import { reconstructIdsOfArticleMetadata } from '#lib/scripts/util.ts';
 
 export const load: PageLoad = async ({
 	fetch

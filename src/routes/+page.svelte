@@ -1,20 +1,20 @@
 <script lang="ts">
-	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import MainVisual from '$lib/components/home/MainVisual.svelte';
-	import SponsorBanner from '$lib/components/home/sponsor_banner/SponsorBanner.svelte';
-	import SectionTitle from '$lib/components/SectionTitle.svelte';
-	import RevealFadeIn from '$lib/components/RevealFadeIn.svelte';
-	import NewsList from '$lib/components/news/NewsList.svelte';
-	import Teams from '$lib/components/home/teams/Teams.svelte';
-	import Event from '$lib/components/home/Event.svelte';
-	import Creative from '$lib/components/home/Creative.svelte';
-	// import Coaching from '$lib/components/home/coaching/Coaching.svelte';
-	// import Goods from '$lib/components/home/Goods.svelte';
-	import Sponsors from '$lib/components/home/Sponsors.svelte';
-	import O2blastButton from '$lib/components/home/O2blastButton.svelte';
+	import HeadMetadata from '#lib/components/HeadMetadata.svelte';
+	import MainVisual from '#lib/components/home/MainVisual.svelte';
+	import SponsorBanner from '#lib/components/home/sponsor_banner/SponsorBanner.svelte';
+	import SectionTitle from '#lib/components/SectionTitle.svelte';
+	import RevealFadeIn from '#lib/components/RevealFadeIn.svelte';
+	import NewsList from '#lib/components/news/NewsList.svelte';
+	import Teams from '#lib/components/home/teams/Teams.svelte';
+	import Event from '#lib/components/home/Event.svelte';
+	import Creative from '#lib/components/home/Creative.svelte';
+	// import Coaching from '#lib/components/home/coaching/Coaching.svelte';
+	// import Goods from '#lib/components/home/Goods.svelte';
+	import Sponsors from '#lib/components/home/Sponsors.svelte';
+	import O2blastButton from '#lib/components/home/O2blastButton.svelte';
 
 	import type { PageData } from './$types';
-	import { SITE_URL } from '$lib/scripts/variables';
+	import { SITE_URL } from '#lib/scripts/variables.ts';
 	import { _ } from 'svelte-i18n';
 
 	interface Props {
@@ -108,5 +108,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/home/home';
+	@use 'stylesheets/home/home';
 </style>

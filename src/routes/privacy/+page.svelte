@@ -1,9 +1,9 @@
 <script lang="ts">
-	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import SectionTitle from '$lib/components/SectionTitle.svelte';
+	import HeadMetadata from '#lib/components/HeadMetadata.svelte';
+	import SectionTitle from '#lib/components/SectionTitle.svelte';
 	import Policy from './policy.svelte';
 
-	import { SITE_URL } from '$lib/scripts/variables';
+	import { SITE_URL } from '#lib/scripts/variables.ts';
 	import { _ } from 'svelte-i18n';
 	import { date as dateI18n } from 'svelte-i18n';
 
@@ -46,7 +46,7 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/color' as *;
 
 	hr {
 		margin: 24px 0;

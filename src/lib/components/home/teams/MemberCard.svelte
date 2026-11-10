@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { GearsAndSettings as GearsAndSettingsType, Member } from '$lib/scripts/types';
-	import MaterialIcon from '$lib/components/MaterialIcon.svelte';
+	import type { GearsAndSettings as GearsAndSettingsType, Member } from '#lib/scripts/types.ts';
+	import MaterialIcon from '#lib/components/MaterialIcon.svelte';
 
-	import type { IconKind } from '$lib/components/MaterialIcon.svelte';
-	import { calcAge, zeroPad } from '$lib/scripts/util';
+	import type { IconKind } from '#lib/components/MaterialIcon.svelte';
+	import { calcAge, zeroPad } from '#lib/scripts/util.ts';
 	import { _, date } from 'svelte-i18n';
-	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
+	import { isGearsAndSettingsModalOpen } from '#lib/scripts/stores.ts';
 
 	interface Props {
 		member: Member;
@@ -181,5 +181,5 @@
 </li>
 
 <style lang="scss">
-	@use '$lib/stylesheets/home/member_card';
+	@use 'stylesheets/home/member_card';
 </style>

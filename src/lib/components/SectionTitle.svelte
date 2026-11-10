@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
+	import { SECTIONS } from '#lib/scripts/data/SECTIONS.ts';
 
 	interface Props {
 		/** Name of the section. */
@@ -12,7 +12,7 @@
 <h1>{name.toUpperCase()}</h1>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	h1 {
 		font-family: 'Josefin Sans', sans-serif;

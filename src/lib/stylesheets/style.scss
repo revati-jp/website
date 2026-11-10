@@ -1,5 +1,5 @@
-@use '$lib/stylesheets/variables/color' as *;
-@use '$lib/stylesheets/variables/mixin' as *;
+@use 'stylesheets/variables/color' as *;
+@use 'stylesheets/variables/mixin' as *;
 
 * {
 	scrollbar-color: $primary-color-darker transparent;

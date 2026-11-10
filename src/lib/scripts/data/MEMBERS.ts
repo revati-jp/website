@@ -93,7 +93,7 @@
 // - メンバーの重複所属を、ナビゲーション整理のために統合・削除しないでください。
 // - URL 互換性・所属整合性の検査: `node --test tests/team-navigation.test.mjs`
 
-import type { Division, TeamSection } from '$lib/scripts/types';
+import type { Division, TeamSection } from '#lib/scripts/types.ts';
 // import { GEARS_AND_SETTINGS } from './GEARS_AND_SETTINGS';
 
 export const TEAM_SECTIONS: TeamSection[] = [
@@ -499,7 +499,7 @@ export const MEMBER_LISTS: Division[] = [
 				birthday: null,
 				age: null,
 				twitter: 'noru_vtuber',
-				youtube: null,
+				youtube: '@noru_vtuber',
 				twitch: 'noru_vtuber',
 				homepage: null
 			},

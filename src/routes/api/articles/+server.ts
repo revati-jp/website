@@ -1,7 +1,6 @@
 import type { RequestHandler } from './$types';
-import { fetchArticles } from '$lib/scripts/fetchers';
-import { json } from '@sveltejs/kit';
+import { fetchArticles } from '#lib/scripts/fetchers.ts';
 
 export const GET: RequestHandler = async () => {
-	return json(await fetchArticles());
+	return Response.json(await fetchArticles());
 };

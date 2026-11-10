@@ -2,7 +2,7 @@
 	import { writable } from 'svelte/store';
 	import { _ } from 'svelte-i18n';
 
-	import Modal from '$lib/components/Modal.svelte';
+	import Modal from '#lib/components/Modal.svelte';
 
 	const PLAYERS = [
 		'Proper',
@@ -86,7 +86,7 @@
 </Modal>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	button {
 		position: fixed;

@@ -8,7 +8,7 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
 
 ## Technical Stack
 
-- Frontend: Svelte 5, SvelteKit 2, SCSS
+- Frontend: Svelte 5, SvelteKit 3, SCSS
 - Language: TypeScript 6 (strict mode)
 - Hosting: Cloudflare Pages
 - Repository: https://github.com/revati-jp/website-dev
@@ -29,7 +29,9 @@ Localization is managed via `ja.json`, `en.json`, and `ko.json` files located in
   - No implicit booleans in conditionals (e.g., `if (0 < count)` or `if (user !== null)`).
 - Use SCSS instead of Vanilla CSS.
   - `src/lib/stylesheets/variables/` directory contains utility SCSS files `_color.scss`, `_mixin.scss`, and `_dimension.scss`.
-    To use them in SCSS files or `<style lang="scss">` blocks, import as `@use '$lib/stylesheets/variables/color' as *;`.
+    To use them in SCSS files or `<style lang="scss">` blocks, import as `@use 'stylesheets/variables/color' as *;`.
+- Import from `src/lib/` via the `#lib` subpath import with an explicit file extension
+  (e.g., `import { foo } from '#lib/scripts/util.ts';`). `$lib` was removed in SvelteKit 3.
 - Follow the Svelte 5 best practices.
   - Use [runes](https://svelte.dev/docs/svelte/what-are-runes) instead of [reactive `$:` statements](https://svelte.dev/docs/svelte/legacy-reactive-assignments).
 

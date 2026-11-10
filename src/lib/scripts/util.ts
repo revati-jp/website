@@ -1,5 +1,5 @@
-import type { ArticleMetadata } from '$lib/scripts/types';
-import { ArticleId } from '$lib/scripts/ArticleId';
+import type { ArticleMetadata } from '#lib/scripts/types.ts';
+import { ArticleId } from '#lib/scripts/ArticleId.ts';
 
 /**
  * Adds a specified class to specified elements when they are scrolled into view.
@@ -14,8 +14,8 @@ import { ArticleId } from '$lib/scripts/ArticleId';
  * ```svelte
  * <script lang="ts">
  *     import { onMount } from 'svelte';
- *     import { browser } from '$app/environment';
- *     import { addClassOnVisible } from '$lib/scripts/util';
+ *     import { browser } from '$app/env';
+ *     import { addClassOnVisible } from '#lib/scripts/util.ts';
  *
  *     onMount(fadeIn);
  *     if (browser) window.addEventListener('scroll', fadeIn);

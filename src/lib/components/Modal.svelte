@@ -3,7 +3,7 @@
 	import { onDestroy } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { _ } from 'svelte-i18n';
-	import { lockPageScroll } from '$lib/scripts/scrollLock';
+	import { lockPageScroll } from '#lib/scripts/scrollLock.ts';
 
 	interface Props {
 		open: Writable<boolean>;
@@ -83,5 +83,5 @@
 </dialog>
 
 <style lang="scss">
-	@use '$lib/stylesheets/modal';
+	@use 'stylesheets/modal';
 </style>

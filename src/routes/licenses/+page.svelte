@@ -1,11 +1,11 @@
 <script lang="ts">
-	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import SectionTitle from '$lib/components/SectionTitle.svelte';
+	import HeadMetadata from '#lib/components/HeadMetadata.svelte';
+	import SectionTitle from '#lib/components/SectionTitle.svelte';
 
-	import licenses from '$lib/licenses.json';
-	import { OTHER_LICENSES } from '$lib/scripts/data/OTHER_LICENSES';
-	import { SITE_URL } from '$lib/scripts/variables';
-	import type { LicenseInfo } from '$lib/scripts/types';
+	import licenses from '#lib/licenses.json';
+	import { OTHER_LICENSES } from '#lib/scripts/data/OTHER_LICENSES.ts';
+	import { SITE_URL } from '#lib/scripts/variables.ts';
+	import type { LicenseInfo } from '#lib/scripts/types.ts';
 	import { _ } from 'svelte-i18n';
 
 	const libraries = Object.entries(licenses as Record<string, LicenseInfo>).map(
@@ -51,8 +51,8 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/color' as *;
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	ul {
 		padding: 0;

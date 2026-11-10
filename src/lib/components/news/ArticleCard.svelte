@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
-	import { HEADER_1200x600_PATH } from '$lib/scripts/variables';
+	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '#lib/scripts/types.ts';
+	import { HEADER_1200x600_PATH } from '#lib/scripts/variables.ts';
 	import { _, date as dateI18n } from 'svelte-i18n';
 	import { SvelteDate } from 'svelte/reactivity';
 
@@ -42,5 +42,5 @@
 >
 
 <style lang="scss">
-	@use '$lib/stylesheets/news/article_card';
+	@use 'stylesheets/news/article_card';
 </style>
