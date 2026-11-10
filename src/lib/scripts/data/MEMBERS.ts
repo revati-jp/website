@@ -499,7 +499,7 @@ export const MEMBER_LISTS: Division[] = [
 				birthday: null,
 				age: null,
 				twitter: 'noru_vtuber',
-				youtube: null,
+				youtube: '@noru_vtuber',
 				twitch: 'noru_vtuber',
 				homepage: null
 			},
