@@ -2,9 +2,9 @@
 	import Socials from './Socials.svelte';
 	import LangSwitcher from './LangSwitcher.svelte';
 
-	import { isDrawerMenuOpened } from '$lib/scripts/stores';
-	import { COPYRIGHT } from '$lib/scripts/variables';
-	import { SOCIALS } from '$lib/scripts/variables';
+	import { isDrawerMenuOpened } from '#lib/scripts/stores.ts';
+	import { COPYRIGHT } from '#lib/scripts/variables.ts';
+	import { SOCIALS } from '#lib/scripts/variables.ts';
 
 	const REVATI_STUDIO_TITLE = 'REVATI Studio（レバスタ）';
 </script>
@@ -32,7 +32,7 @@
 </footer>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	footer {
 		// Ensures the footer stays anchored to the bottom on pages with short content, especially on high-resolution screens (e.g., 4K).

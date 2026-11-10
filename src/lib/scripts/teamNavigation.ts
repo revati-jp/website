@@ -1,4 +1,4 @@
-import type { Division, TeamSection } from '$lib/scripts/types';
+import type { Division, TeamSection } from '#lib/scripts/types.ts';
 
 /** Both levels follow their source arrays; empty sections have no navigation entry. */
 export function getTeamSections(sections: readonly TeamSection[], divisions: readonly Division[]) {
@@ -23,8 +23,8 @@ export function resolveDivision(
 }
 
 /** Preserve unrelated query parameters and do not mutate SvelteKit's page URL. */
-export function divisionHref(currentUrl: URL, divisionId: string): string {
-	const url = new URL(currentUrl);
+export function divisionHref(currentUrl: Pick<URL, 'href'>, divisionId: string): string {
+	const url = new URL(currentUrl.href);
 	url.searchParams.set('div', divisionId);
 	url.hash = 'teams';
 	return url.pathname + url.search + url.hash;

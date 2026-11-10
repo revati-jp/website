@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+	import { PAGE_FULL_TITLE_PART } from '#lib/scripts/variables.ts';
 
 	import { page } from '$app/state';
 	import { _ } from 'svelte-i18n';
@@ -24,8 +24,8 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/color' as *;
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	div {
 		min-height: 36vh;

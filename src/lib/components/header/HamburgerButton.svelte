@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { fly, scale } from 'svelte/transition';
-	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '#lib/scripts/stores.ts';
 
 	const FLY_OFFSET = 32;
 </script>
@@ -20,5 +20,5 @@
 {/if}
 
 <style lang="scss">
-	@use '$lib/stylesheets/header/hamburger_btn';
+	@use 'stylesheets/header/hamburger_btn';
 </style>

@@ -1,4 +1,4 @@
-import { zeroPad } from '$lib/scripts/util';
+import { zeroPad } from '#lib/scripts/util.ts';
 
 export class ArticleId {
 	/** The year of the article. */

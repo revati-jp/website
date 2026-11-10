@@ -50,7 +50,7 @@
 </table>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	table {
 		margin: 26px auto;

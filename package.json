@@ -2,6 +2,9 @@
 	"name": "revati_website",
 	"version": "5.2.11",
 	"private": true,
+	"imports": {
+		"#lib/*": "./src/lib/*"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "pnpm run licenses && vite build",
@@ -38,8 +41,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-cloudflare": "^7.2.10",
-		"@sveltejs/kit": "^2.70.4",
+		"@sveltejs/adapter-cloudflare": "^8.0.2",
+		"@sveltejs/kit": "^3.1.1",
 		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@types/node": "^26.6.6",
 		"@types/nprogress": "^0.2.3",

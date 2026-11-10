@@ -1,13 +1,13 @@
 <script lang="ts">
-	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
+	import HeadMetadata from '#lib/components/HeadMetadata.svelte';
 	import Article from './Article.svelte';
 
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
-	import { ArticleId } from '$lib/scripts/ArticleId';
-	import { HEADER_1200x600_PATH, SITE_URL } from '$lib/scripts/variables';
+	import { ArticleId } from '#lib/scripts/ArticleId.ts';
+	import { HEADER_1200x600_PATH, SITE_URL } from '#lib/scripts/variables.ts';
 	import { _, date as dateI18n } from 'svelte-i18n';
 	import { SvelteDate } from 'svelte/reactivity';
 
@@ -120,5 +120,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/news/article_page';
+	@use 'stylesheets/news/article_page';
 </style>

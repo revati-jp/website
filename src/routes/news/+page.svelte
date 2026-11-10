@@ -1,10 +1,10 @@
 <script lang="ts">
-	import HeadMetadata from '$lib/components/HeadMetadata.svelte';
-	import SectionTitle from '$lib/components/SectionTitle.svelte';
-	import NewsList from '$lib/components/news/NewsList.svelte';
+	import HeadMetadata from '#lib/components/HeadMetadata.svelte';
+	import SectionTitle from '#lib/components/SectionTitle.svelte';
+	import NewsList from '#lib/components/news/NewsList.svelte';
 
 	import type { PageData } from './$types';
-	import { SITE_URL } from '$lib/scripts/variables';
+	import { SITE_URL } from '#lib/scripts/variables.ts';
 	import { _ } from 'svelte-i18n';
 
 	interface Props {
@@ -27,7 +27,7 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	.no-max-width {
 		max-width: none !important;

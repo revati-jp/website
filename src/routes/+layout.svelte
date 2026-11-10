@@ -1,18 +1,18 @@
 <!-- @migration task: review uses of `navigating` -->
 <script lang="ts">
-	import Header from '$lib/components/header/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
+	import Header from '#lib/components/header/Header.svelte';
+	import Footer from '#lib/components/Footer.svelte';
 
-	import { BREAKPOINT_HB } from '$lib/scripts/variables';
-	import { updateVh001 } from '$lib/scripts/util';
-	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '$lib/scripts/stores';
+	import { BREAKPOINT_HB } from '#lib/scripts/variables.ts';
+	import { updateVh001 } from '#lib/scripts/util.ts';
+	import { isDrawerMenuOpened, isHamburgerButtonEnabled } from '#lib/scripts/stores.ts';
 	import NProgress from 'nprogress';
 	import 'nprogress/nprogress.css';
 	import { navigating, page } from '$app/state';
-	import { COPYRIGHT, SOCIALS, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
-	import { browser } from '$app/environment';
-	import { HEADER_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
-	import { SECTIONS } from '$lib/scripts/data/SECTIONS';
+	import { COPYRIGHT, SOCIALS, PAGE_FULL_TITLE_PART } from '#lib/scripts/variables.ts';
+	import { browser } from '$app/env';
+	import { HEADER_ITEMS } from '#lib/scripts/data/HEADER_ITEMS.ts';
+	import { SECTIONS } from '#lib/scripts/data/SECTIONS.ts';
 
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -120,6 +120,6 @@
 <Footer />
 
 <style lang="scss" global>
-	@use '$lib/stylesheets/layout';
-	@use '$lib/stylesheets/style';
+	@use 'stylesheets/layout';
+	@use 'stylesheets/style';
 </style>

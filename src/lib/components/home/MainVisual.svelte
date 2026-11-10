@@ -3,8 +3,8 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
-	@use '$lib/stylesheets/variables/dimension' as *;
+	@use 'stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/dimension' as *;
 
 	div {
 		height: calc($max-vh001 * 100);

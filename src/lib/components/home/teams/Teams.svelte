@@ -1,12 +1,12 @@
 <script lang="ts">
 	import MemberCard from './MemberCard.svelte';
-	import Modal from '$lib/components/Modal.svelte';
-	import GearsAndSettings from '$lib/components/home/teams/GearsAndSettings.svelte';
+	import Modal from '#lib/components/Modal.svelte';
+	import GearsAndSettings from '#lib/components/home/teams/GearsAndSettings.svelte';
 
-	import { MEMBER_LISTS, TEAM_SECTIONS, LEGACY_DIVISION_IDS } from '$lib/scripts/data/MEMBERS';
-	import { divisionHref, getTeamSections, resolveDivision } from '$lib/scripts/teamNavigation';
-	import { type GearsAndSettings as GearsAndSettingsType } from '$lib/scripts/types';
-	import { isGearsAndSettingsModalOpen } from '$lib/scripts/stores';
+	import { MEMBER_LISTS, TEAM_SECTIONS, LEGACY_DIVISION_IDS } from '#lib/scripts/data/MEMBERS.ts';
+	import { divisionHref, getTeamSections, resolveDivision } from '#lib/scripts/teamNavigation.ts';
+	import { type GearsAndSettings as GearsAndSettingsType } from '#lib/scripts/types.ts';
+	import { isGearsAndSettingsModalOpen } from '#lib/scripts/stores.ts';
 	import { page } from '$app/state';
 	import { tick } from 'svelte';
 	import { _ } from 'svelte-i18n';
@@ -69,8 +69,7 @@
 	class="team-navigation"
 	bind:this={navigation}
 	data-sveltekit-replacestate
-	data-sveltekit-noscroll
-	data-sveltekit-keepfocus
+	data-sveltekit-reset="false"
 	data-sveltekit-preload-data="false"
 >
 	{#if currentSection !== undefined && currentDivision !== undefined}
@@ -162,5 +161,5 @@
 </noscript>
 
 <style lang="scss">
-	@use '$lib/stylesheets/home/teams';
+	@use 'stylesheets/home/teams';
 </style>

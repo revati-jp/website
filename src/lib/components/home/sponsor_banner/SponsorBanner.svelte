@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SPONSORS } from '$lib/scripts/data/SPONSORS';
+	import { SPONSORS } from '#lib/scripts/data/SPONSORS.ts';
 	import Sponsor from './Sponsor.svelte';
 </script>
 
@@ -21,8 +21,8 @@
 {/if}
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/dimension' as *;
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/dimension' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	// 広い画面におけるスポンサーのロゴの間隔指数。
 	// 200% 超過である必要があります。

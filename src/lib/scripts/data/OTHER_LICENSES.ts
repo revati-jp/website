@@ -1,4 +1,4 @@
-import type { LicenseInfo } from '$lib/scripts/types';
+import type { LicenseInfo } from '#lib/scripts/types.ts';
 
 export const OTHER_LICENSES: {
 	id: string;

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { SITE_URL, PAGE_FULL_TITLE_PART } from '$lib/scripts/variables';
+	import { SITE_URL, PAGE_FULL_TITLE_PART } from '#lib/scripts/variables.ts';
 
 	interface Props {
 		/**

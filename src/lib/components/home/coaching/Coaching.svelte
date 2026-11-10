@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Modal from '$lib/components/Modal.svelte';
+	import Modal from '#lib/components/Modal.svelte';
 	import Fees from './Fees.svelte';
 	import Coaches from './Coaches.svelte';
 
 	import { _ } from 'svelte-i18n';
-	import { isFeesModalOpen, isCoachesModalOpen } from '$lib/scripts/stores';
+	import { isFeesModalOpen, isCoachesModalOpen } from '#lib/scripts/stores.ts';
 
 	let modalTitles = $derived({
 		fees: $_('coaching.fees'),
@@ -60,5 +60,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/home/coaching';
+	@use 'stylesheets/home/coaching';
 </style>

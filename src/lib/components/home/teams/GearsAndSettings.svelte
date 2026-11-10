@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { GearsAndSettings } from '$lib/scripts/types';
+	import type { GearsAndSettings } from '#lib/scripts/types.ts';
 	import { _ } from 'svelte-i18n';
 
 	interface Props {
@@ -206,8 +206,8 @@
 {/each}
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
-	@use '$lib/stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/color' as *;
 
 	img {
 		height: 186px;

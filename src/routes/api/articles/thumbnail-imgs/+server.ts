@@ -1,6 +1,5 @@
-import { fetchThumbnailImgFmt } from '$lib/scripts/fetchers';
-import { json } from '@sveltejs/kit';
+import { fetchThumbnailImgFmt } from '#lib/scripts/fetchers.ts';
 
 export const prerender = true;
 
-export const GET = async () => json(await fetchThumbnailImgFmt());
+export const GET = async () => Response.json(await fetchThumbnailImgFmt());

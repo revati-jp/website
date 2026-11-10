@@ -13,5 +13,5 @@
 <article class="article-body"><SvelteComponent_1 /></article>
 
 <style lang="scss" global>
-	@use '$lib/stylesheets/news/article_body';
+	@use 'stylesheets/news/article_body';
 </style>

@@ -2,7 +2,7 @@
 	import ChevronArrow from './ChevronArrow.svelte';
 	import ArticleCard from './ArticleCard.svelte';
 
-	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '$lib/scripts/types';
+	import type { ArticleMetadata, ArticleThumbnailImgFmts } from '#lib/scripts/types.ts';
 	import { fly } from 'svelte/transition';
 	import { _ } from 'svelte-i18n';
 
@@ -103,5 +103,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/news/news_list';
+	@use 'stylesheets/news/news_list';
 </style>

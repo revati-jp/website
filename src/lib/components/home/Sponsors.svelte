@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
 
-	import { SPONSORS } from '$lib/scripts/data/SPONSORS';
+	import { SPONSORS } from '#lib/scripts/data/SPONSORS.ts';
 </script>
 
 {#if 0 < SPONSORS.length}

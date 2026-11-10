@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import { SOCIALS } from '$lib/scripts/variables';
+	import { SOCIALS } from '#lib/scripts/variables.ts';
 </script>
 
 <p>
@@ -13,7 +13,7 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	p {
 		display: inline-block;

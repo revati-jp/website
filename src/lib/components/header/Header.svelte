@@ -1,19 +1,19 @@
 <script lang="ts">
 	import HbBtn from './HamburgerButton.svelte';
-	import Modal from '$lib/components/Modal.svelte';
-	import Socials from '$lib/components/Socials.svelte';
-	import LangSwitcher from '$lib/components/LangSwitcher.svelte';
+	import Modal from '#lib/components/Modal.svelte';
+	import Socials from '#lib/components/Socials.svelte';
+	import LangSwitcher from '#lib/components/LangSwitcher.svelte';
 	import Contact from './Contact.svelte';
 
-	import { browser } from '$app/environment';
-	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '$lib/scripts/data/HEADER_ITEMS';
+	import { browser } from '$app/env';
+	import { HEADER_ITEMS, NON_SECTION_ITEMS } from '#lib/scripts/data/HEADER_ITEMS.ts';
 	import {
 		isContactModalOpen,
 		isDrawerMenuOpened,
 		isHamburgerButtonEnabled
-	} from '$lib/scripts/stores';
+	} from '#lib/scripts/stores.ts';
 	import { _ } from 'svelte-i18n';
-	import { COPYRIGHT } from '$lib/scripts/variables';
+	import { COPYRIGHT } from '#lib/scripts/variables.ts';
 	import { page } from '$app/state';
 
 	let url = $derived(page.url);
@@ -94,5 +94,5 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/header/header';
+	@use 'stylesheets/header/header';
 </style>

@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
-import { browser } from '$app/environment';
-import { updateVh001 } from '$lib/scripts/util';
-import { lockPageScroll } from '$lib/scripts/scrollLock';
+import { browser } from '$app/env';
+import { updateVh001 } from '#lib/scripts/util.ts';
+import { lockPageScroll } from '#lib/scripts/scrollLock.ts';
 
 export const isDrawerMenuOpened = writable(false);
 let unlockDrawerScroll: (() => void) | undefined;

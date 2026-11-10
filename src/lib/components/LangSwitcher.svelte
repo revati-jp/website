@@ -26,7 +26,7 @@
 >
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	label {
 		@include hideWhenNoJs;

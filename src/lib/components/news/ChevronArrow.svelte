@@ -34,7 +34,7 @@
 </div>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	.transparent {
 		opacity: 0.15;

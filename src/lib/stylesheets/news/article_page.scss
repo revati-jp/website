@@ -1,6 +1,6 @@
-@use '$lib/stylesheets/variables/color' as *;
-@use '$lib/stylesheets/variables/mixin' as *;
-@use '$lib/stylesheets/variables/dimension' as *;
+@use 'stylesheets/variables/color' as *;
+@use 'stylesheets/variables/mixin' as *;
+@use 'stylesheets/variables/dimension' as *;
 
 .container {
 	min-height: 100vh;

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { COACHES } from '$lib/scripts/data/COACHING_PJ';
+	import { COACHES } from '#lib/scripts/data/COACHING_PJ.ts';
 </script>
 
 <ul>
@@ -31,8 +31,8 @@
 </ul>
 
 <style lang="scss">
-	@use '$lib/stylesheets/variables/color' as *;
-	@use '$lib/stylesheets/variables/mixin' as *;
+	@use 'stylesheets/variables/color' as *;
+	@use 'stylesheets/variables/mixin' as *;
 
 	ul {
 		display: flex;
